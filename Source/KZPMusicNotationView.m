@@ -97,7 +97,6 @@
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
-    NSLog(@"loaded");
     [self releaseCommandQueue];
 }
 
@@ -106,7 +105,7 @@
 
 - (void)renderNotationString:(NSString *)notationString
 {
-    [self.commandQueue addObject:@{@"renderVexpaString": @[notationString]}];
+    [self enqueueCommand:@{@"renderVexpaString": @[notationString]}];
 }
 
 @end

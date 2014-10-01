@@ -39,10 +39,6 @@
 		C91D9C2919DC357900D33363 /* KZPMusicNotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KZPMusicNotationView.h; path = ../Source/KZPMusicNotationView.h; sourceTree = "<group>"; };
 		C91D9C2A19DC357900D33363 /* KZPMusicNotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KZPMusicNotationView.m; path = ../Source/KZPMusicNotationView.m; sourceTree = "<group>"; };
 		C91D9C2C19DC35A400D33363 /* Vexflow */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Vexflow; path = ../Source/Vexflow; sourceTree = "<group>"; };
-		C91D9C2E19DC391700D33363 /* JMSNotationViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JMSNotationViewer.h; path = ../Source/JMSNotationViewer.h; sourceTree = "<group>"; };
-		C91D9C2F19DC391700D33363 /* JMSNotationViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JMSNotationViewer.m; path = ../Source/JMSNotationViewer.m; sourceTree = "<group>"; };
-		C91D9C3019DC391700D33363 /* JMSWebViewiOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JMSWebViewiOS.h; path = ../Source/JMSWebViewiOS.h; sourceTree = "<group>"; };
-		C91D9C3119DC391700D33363 /* JMSWebViewiOS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JMSWebViewiOS.m; path = ../Source/JMSWebViewiOS.m; sourceTree = "<group>"; };
 		C9A50B7019CEFDD70076D40B /* KZPMusicNotation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KZPMusicNotation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A50B7319CEFDD70076D40B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C9A50B7519CEFDD70076D40B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -166,10 +162,6 @@
 		C9A50BA819CEFE660076D40B /* KZPMusicNotation */ = {
 			isa = PBXGroup;
 			children = (
-				C91D9C2E19DC391700D33363 /* JMSNotationViewer.h */,
-				C91D9C2F19DC391700D33363 /* JMSNotationViewer.m */,
-				C91D9C3019DC391700D33363 /* JMSWebViewiOS.h */,
-				C91D9C3119DC391700D33363 /* JMSWebViewiOS.m */,
 				C91D9C2C19DC35A400D33363 /* Vexflow */,
 				C91D9C2919DC357900D33363 /* KZPMusicNotationView.h */,
 				C91D9C2A19DC357900D33363 /* KZPMusicNotationView.m */,

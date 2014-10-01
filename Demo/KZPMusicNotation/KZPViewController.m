@@ -7,8 +7,12 @@
 //
 
 #import "KZPViewController.h"
+#import "KZPMusicNotationView.h"
 
 @interface KZPViewController ()
+
+@property (weak, nonatomic) IBOutlet KZPMusicNotationView *canvas;
+@property (weak, nonatomic) IBOutlet UITextField *textField;
 
 @end
 
@@ -17,13 +21,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [self.textField addTarget:self action:@selector(textFieldDidChange:)
+        forControlEvents:UIControlEventEditingChanged];
 }
 
-- (void)didReceiveMemoryWarning
+- (void)textFieldDidChange:(UITextField *)sender
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [self.canvas renderNotationString:sender.text];
 }
+
+
 
 @end

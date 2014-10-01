@@ -244,12 +244,12 @@ t1412170433
 s723
 
 N/Users/Matt/Developer/Objective C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/Objects-normal/i386/KZPMusicNotationView.o
-t1412171469
-s57060
+t1412172585
+s56524
 
 N/Users/Matt/Developer/Objective C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/Objects-normal/i386/KZPViewController.o
-t1412170401
-s39088
+t1412172585
+s49604
 
 N/Users/Matt/Developer/Objective C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/Objects-normal/i386/main.o
 t1412170401
@@ -272,15 +272,15 @@ t1411303100
 s122548
 
 N/Users/Matt/Developer/Objective C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/KZPMusicNotation.app
-t1412171469
+t1412172695
 s306
 
 N/Users/Matt/Developer/Objective C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/KZPMusicNotation.app.dSYM
-t1412171450
+t1412172585
 s102
 
 N/Users/Matt/Developer/Objective C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/KZPMusicNotation.app/Base.lproj/Main.storyboardc
-t1412170435
+t1412172719
 s170
 
 N/Users/Matt/Developer/Objective C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/KZPMusicNotation.app/Info.plist
@@ -288,8 +288,8 @@ t1412170435
 s898
 
 N/Users/Matt/Developer/Objective C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/KZPMusicNotation.app/KZPMusicNotation
-t1412171469
-s29096
+t1412172585
+s30116
 
 N/Users/Matt/Developer/Objective C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/KZPMusicNotation.app/PkgInfo
 t1412170435
@@ -304,9 +304,9 @@ t1411303100
 s42
 
 N/Users/Matt/Developer/Objective C/KZPMusicNotation/Demo/KZPMusicNotation/Base.lproj/Main.storyboard
-c00000000542BFB080000000000000DA7
-t1412168456
-s3495
+c00000000542C0BAF0000000000000E85
+t1412172719
+s3717
 
 N/Users/Matt/Developer/Objective C/KZPMusicNotation/Demo/KZPMusicNotation/Images.xcassets
 c00000000541EC6570000000000000088
@@ -339,9 +339,9 @@ t1411302999
 s230
 
 N/Users/Matt/Developer/Objective C/KZPMusicNotation/Demo/KZPMusicNotation/KZPViewController.m
-c00000000541EC6570000000000000202
-t1411302999
-s514
+c00000000542C0B2800000000000002C6
+t1412172584
+s710
 
 N/Users/Matt/Developer/Objective C/KZPMusicNotation/Demo/KZPMusicNotation/en.lproj/InfoPlist.strings
 c00000000541EC657000000000000002D
@@ -369,9 +369,9 @@ t1412170993
 s306
 
 N/Users/Matt/Developer/Objective C/KZPMusicNotation/Source/KZPMusicNotationView.m
-c00000000542C06CA0000000000000B91
-t1412171466
-s2961
+c00000000542C0B210000000000000B1D
+t1412172577
+s2845
 
 N/Users/Matt/Developer/Objective C/KZPMusicNotation/Source/Vexflow
 c0000000054203CB30000000000000154
@@ -407,6 +407,11 @@ N/usr/lib/system/libcorecrypto.dylib
 c0000000052A199BE00000000000BD920
 t1386322366
 s776480
+
+N/usr/lib/system/libdyld.dylib
+c0000000053BF582300000000000141F0
+t1405048867
+s82416
 
 N/usr/lib/system/libkeymgr.dylib
 c0000000052A199BF000000000000A120
@@ -531,7 +536,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesb054c74d3edcb941^f8c3c74d3edcb941^---0#1#1#--18"Check dependencies36"2AD77450-0286-4F48-BDC9-FD999C856D02-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciescf84e62f43dcb941^5323ec2f43dcb941^---0#1#1#--18"Check dependencies36"B3F01989-B0FE-46D3-A7B9-8FFB594D477D-
 
 CCompileAssetCatalog /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/KZPMusicNotation.app /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/KZPMusicNotation/Images.xcassets
 s432995900.453709
@@ -611,8 +616,8 @@ CCompileC Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMu
 r0
 
 CCompileC Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/Objects-normal/i386/KZPMusicNotationView.o /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Source/KZPMusicNotationView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s433864269.780630
-e433864269.851422
+s433865385.796051
+e433865385.870623
 r1
 xCompileC
 xBuild/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/Objects-normal/i386/KZPMusicNotationView.o
@@ -623,12 +628,12 @@ xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 d/Users/Matt/Developer/Objective C/KZPMusicNotation/Source/KZPMusicNotationView.m
 d/Users/Matt/Developer/Objective C/KZPMusicNotation/Source/KZPMusicNotationView.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Compile /Users/Matt/Developer/Objective C/KZPMusicNotation/Source/KZPMusicNotationView.m289"CompileC Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/Objects-normal/i386/KZPMusicNotationView.o /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Source/KZPMusicNotationView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler27f7c74d3edcb941^c6f7d94d3edcb941^---0#0#1#-19%DVTDocumentLocation2@89"file:///Users/Matt/Developer/Objective%20C/KZPMusicNotation/Source/KZPMusicNotationView.m0000000000000000^4236"CompileC Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/Objects-normal/i386/KZPMusicNotationView.o /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Source/KZPMusicNotationView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Matt/Developer/Objective C/KZPMusicNotation/Demo"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/Matt/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/KZPMusicNotation-generated-files.hmap -I/Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/KZPMusicNotation-own-target-headers.hmap -I/Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/KZPMusicNotation-all-target-headers.hmap -iquote /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/KZPMusicNotation-project-headers.hmap -I/Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/DerivedSources/i386 -I/Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/DerivedSources -F/Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator -include /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/PrecompiledHeaders/KZPMusicNotation-Prefix-azvcxhfpafokpmcxmkqaxahtdepb/KZPMusicNotation-Prefix.pch -MMD -MT dependencies -MF /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/Objects-normal/i386/KZPMusicNotationView.d --serialize-diagnostics /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/Objects-normal/i386/KZPMusicNotationView.dia -c /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Source/KZPMusicNotationView.m -o /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/Objects-normal/i386/KZPMusicNotationView.o36"BCC82309-F952-4B2A-BCFB-ED48D25C8D39-
-bA195731A-D400-4B33-A46A-CA035E2247E2
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Compile /Users/Matt/Developer/Objective C/KZPMusicNotation/Source/KZPMusicNotationView.m289"CompileC Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/Objects-normal/i386/KZPMusicNotationView.o /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Source/KZPMusicNotationView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerebe5cba942dcb941^11e2dea942dcb941^---0#0#1#-19%DVTDocumentLocation2@89"file:///Users/Matt/Developer/Objective%20C/KZPMusicNotation/Source/KZPMusicNotationView.m0000000000000000^4236"CompileC Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/Objects-normal/i386/KZPMusicNotationView.o /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Source/KZPMusicNotationView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Matt/Developer/Objective C/KZPMusicNotation/Demo"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/Matt/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/KZPMusicNotation-generated-files.hmap -I/Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/KZPMusicNotation-own-target-headers.hmap -I/Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/KZPMusicNotation-all-target-headers.hmap -iquote /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/KZPMusicNotation-project-headers.hmap -I/Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/DerivedSources/i386 -I/Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/DerivedSources -F/Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator -include /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/PrecompiledHeaders/KZPMusicNotation-Prefix-azvcxhfpafokpmcxmkqaxahtdepb/KZPMusicNotation-Prefix.pch -MMD -MT dependencies -MF /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/Objects-normal/i386/KZPMusicNotationView.d --serialize-diagnostics /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/Objects-normal/i386/KZPMusicNotationView.dia -c /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Source/KZPMusicNotationView.m -o /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/Objects-normal/i386/KZPMusicNotationView.o36"B248175C-189A-4769-ABAC-B8B5DF33A83D-
+b51D05383-E4F7-4796-99FF-372D894C0C9D
 
 CCompileC Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/Objects-normal/i386/KZPViewController.o /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/KZPMusicNotation/KZPViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s433863201.097040
-e433863201.262537
+s433865385.795442
+e433865385.873489
 r1
 xCompileC
 xBuild/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/Objects-normal/i386/KZPViewController.o
@@ -639,8 +644,9 @@ xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 d/Users/Matt/Developer/Objective C/KZPMusicNotation/Demo/KZPMusicNotation/KZPViewController.m
 d/Users/Matt/Developer/Objective C/KZPMusicNotation/Demo/KZPMusicNotation/KZPViewController.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection100"Compile /Users/Matt/Developer/Objective C/KZPMusicNotation/Demo/KZPMusicNotation/KZPViewController.m241"CompileC Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/Objects-normal/i386/KZPViewController.o KZPMusicNotation/KZPViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilercbf318213adcb941^0c3c43213adcb941^---0#0#1#-19%DVTDocumentLocation2@101"file:///Users/Matt/Developer/Objective%20C/KZPMusicNotation/Demo/KZPMusicNotation/KZPViewController.m0000000000000000^4191"CompileC Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/Objects-normal/i386/KZPViewController.o KZPMusicNotation/KZPViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Matt/Developer/Objective C/KZPMusicNotation/Demo"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/Matt/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/KZPMusicNotation-generated-files.hmap -I/Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/KZPMusicNotation-own-target-headers.hmap -I/Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/KZPMusicNotation-all-target-headers.hmap -iquote /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/KZPMusicNotation-project-headers.hmap -I/Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/DerivedSources/i386 -I/Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/DerivedSources -F/Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator -include /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/PrecompiledHeaders/KZPMusicNotation-Prefix-azvcxhfpafokpmcxmkqaxahtdepb/KZPMusicNotation-Prefix.pch -MMD -MT dependencies -MF /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/Objects-normal/i386/KZPViewController.d --serialize-diagnostics /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/Objects-normal/i386/KZPViewController.dia -c /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/KZPMusicNotation/KZPViewController.m -o /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/Objects-normal/i386/KZPViewController.o36"A538E0EA-6677-4390-BB27-05239993D1B1-
-b5E37AF58-2519-46C3-889A-5898B72D236D
+d/Users/Matt/Developer/Objective C/KZPMusicNotation/Source/KZPMusicNotationView.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection100"Compile /Users/Matt/Developer/Objective C/KZPMusicNotation/Demo/KZPMusicNotation/KZPViewController.m241"CompileC Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/Objects-normal/i386/KZPViewController.o KZPMusicNotation/KZPViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler1ac0cba942dcb941^d49ddfa942dcb941^---0#0#1#-19%DVTDocumentLocation2@101"file:///Users/Matt/Developer/Objective%20C/KZPMusicNotation/Demo/KZPMusicNotation/KZPViewController.m0000000000000000^4191"CompileC Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/Objects-normal/i386/KZPViewController.o KZPMusicNotation/KZPViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/Matt/Developer/Objective C/KZPMusicNotation/Demo"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/Matt/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/KZPMusicNotation-generated-files.hmap -I/Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/KZPMusicNotation-own-target-headers.hmap -I/Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/KZPMusicNotation-all-target-headers.hmap -iquote /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/KZPMusicNotation-project-headers.hmap -I/Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/DerivedSources/i386 -I/Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/DerivedSources -F/Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator -include /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/PrecompiledHeaders/KZPMusicNotation-Prefix-azvcxhfpafokpmcxmkqaxahtdepb/KZPMusicNotation-Prefix.pch -MMD -MT dependencies -MF /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/Objects-normal/i386/KZPViewController.d --serialize-diagnostics /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/Objects-normal/i386/KZPViewController.dia -c /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/KZPMusicNotation/KZPViewController.m -o /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/Objects-normal/i386/KZPViewController.o36"6E56D526-CCC4-4EC2-856B-C74C76E15C11-
+b51D05383-E4F7-4796-99FF-372D894C0C9D
 
 CCompileC Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/Objects-normal/i386/main.o /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/KZPMusicNotation/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s433863201.097435
@@ -659,14 +665,13 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile
 b5E37AF58-2519-46C3-889A-5898B72D236D
 
 CCompileStoryboard /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/KZPMusicNotation/Base.lproj/Main.storyboard
-s433863234.093584
-e433863235.011077
+s433865519.903173
+e433865519.968270
 r1
 xCompileStoryboard
 x/Users/Matt/Developer/Objective C/KZPMusicNotation/Demo/KZPMusicNotation/Base.lproj/Main.storyboard
-onwi_state: registration failed (1000000)
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"CompileStoryboard KZPMusicNotation/Base.lproj/Main.storyboard61"CompileStoryboard KZPMusicNotation/Base.lproj/Main.storyboard740818423adcb941^56d602433adcb941^-41"nwi_state: registration failed (1000000)-0#0#1#-19%DVTDocumentLocation2@108"file:///Users/Matt/Developer/Objective%20C/KZPMusicNotation/Demo/KZPMusicNotation/Base.lproj/Main.storyboard0000000000000000^921"CompileStoryboard KZPMusicNotation/Base.lproj/Main.storyboard    cd "/Users/Matt/Developer/Objective C/KZPMusicNotation/Demo"    export IBSC_MINIMUM_COMPATIBILITY_VERSION=7.1    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    export XCODE_DEVELOPER_USR_PATH=/Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 7.1 --output-format human-readable-text --compile /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/KZPMusicNotation.app/Base.lproj/Main.storyboardc /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/KZPMusicNotation/Base.lproj/Main.storyboard36"273196BA-21EB-429E-9D1B-FFD8A5D401CE-
-b43697E0B-5BE7-459E-A119-554FC2FD640A
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"CompileStoryboard KZPMusicNotation/Base.lproj/Main.storyboard61"CompileStoryboard KZPMusicNotation/Base.lproj/Main.storyboard9643e72f43dcb941^d2dff72f43dcb941^---0#0#1#-19%DVTDocumentLocation2@108"file:///Users/Matt/Developer/Objective%20C/KZPMusicNotation/Demo/KZPMusicNotation/Base.lproj/Main.storyboard0000000000000000^921"CompileStoryboard KZPMusicNotation/Base.lproj/Main.storyboard    cd "/Users/Matt/Developer/Objective C/KZPMusicNotation/Demo"    export IBSC_MINIMUM_COMPATIBILITY_VERSION=7.1    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    export XCODE_DEVELOPER_USR_PATH=/Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 7.1 --output-format human-readable-text --compile /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/KZPMusicNotation.app/Base.lproj/Main.storyboardc /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/KZPMusicNotation/Base.lproj/Main.storyboard36"550CD578-F0AD-4B8D-88CC-F0673010390D-
+bC0EFA235-EF5D-4C9A-8117-A85B45C7F7CE
 
 CCopyStringsFile /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/KZPMusicNotation.app/en.lproj/InfoPlist.strings KZPMusicNotation/en.lproj/InfoPlist.strings
 s432995900.452604
@@ -689,18 +694,18 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Copy Bu
 b43697E0B-5BE7-459E-A119-554FC2FD640A
 
 CGenerateDSYMFile /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/KZPMusicNotation.app.dSYM /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/KZPMusicNotation.app/KZPMusicNotation
-s433864269.884849
-e433864269.899842
+s433865385.907105
+e433865385.924903
 r1
 xGenerateDSYMFile
 x/Users/Matt/Developer/Objective C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/KZPMusicNotation.app.dSYM
 x/Users/Matt/Developer/Objective C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/KZPMusicNotation.app/KZPMusicNotation
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection127"Generate /Users/Matt/Developer/Objective C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/KZPMusicNotation.app.dSYM154"GenerateDSYMFile Build/Products/Debug-iphonesimulator/KZPMusicNotation.app.dSYM Build/Products/Debug-iphonesimulator/KZPMusicNotation.app/KZPMusicNotation8a90e24d3edcb941^a35ce64d3edcb941^---0#0#1#-19%DVTDocumentLocation2@128"file:///Users/Matt/Developer/Objective%20C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/KZPMusicNotation.app.dSYM/0000000000000000^770"GenerateDSYMFile Build/Products/Debug-iphonesimulator/KZPMusicNotation.app.dSYM Build/Products/Debug-iphonesimulator/KZPMusicNotation.app/KZPMusicNotation    cd "/Users/Matt/Developer/Objective C/KZPMusicNotation/Demo"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/KZPMusicNotation.app/KZPMusicNotation -o /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/KZPMusicNotation.app.dSYM36"C88D050E-6091-4797-8A7A-D9D1EC02ACED-
-bA195731A-D400-4B33-A46A-CA035E2247E2
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection127"Generate /Users/Matt/Developer/Objective C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/KZPMusicNotation.app.dSYM154"GenerateDSYMFile Build/Products/Debug-iphonesimulator/KZPMusicNotation.app.dSYM Build/Products/Debug-iphonesimulator/KZPMusicNotation.app/KZPMusicNotationb343e8a942dcb941^4cc7eca942dcb941^---0#0#1#-19%DVTDocumentLocation2@128"file:///Users/Matt/Developer/Objective%20C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/KZPMusicNotation.app.dSYM/0000000000000000^770"GenerateDSYMFile Build/Products/Debug-iphonesimulator/KZPMusicNotation.app.dSYM Build/Products/Debug-iphonesimulator/KZPMusicNotation.app/KZPMusicNotation    cd "/Users/Matt/Developer/Objective C/KZPMusicNotation/Demo"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/KZPMusicNotation.app/KZPMusicNotation -o /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/KZPMusicNotation.app.dSYM36"0B8509E7-8588-458D-8910-6C6868D036AD-
+b51D05383-E4F7-4796-99FF-372D894C0C9D
 
 CLd /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/KZPMusicNotation.app/KZPMusicNotation normal i386
-s433864269.852732
-e433864269.882934
+s433865385.874894
+e433865385.904824
 r1
 xLd
 x/Users/Matt/Developer/Objective C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/KZPMusicNotation.app/KZPMusicNotation
@@ -726,6 +731,7 @@ d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/D
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreText.framework/CoreText
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_override.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcache_sim.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcommonCrypto_sim.dylib
@@ -748,7 +754,6 @@ d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/D
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_configuration.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_asl.dylib
 d/usr/lib/libSystem.B.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/host/libdyld.dylib
 d/usr/lib/system/libcache.dylib
 d/usr/lib/system/libcommonCrypto.dylib
@@ -775,8 +780,8 @@ d/usr/lib/system/libsystem_pthread.dylib
 d/usr/lib/system/libsystem_sandbox.dylib
 d/usr/lib/system/libunc.dylib
 d/usr/lib/system/libunwind.dylib
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection135"Link /Users/Matt/Developer/Objective C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/KZPMusicNotation.app/KZPMusicNotation89"Ld Build/Products/Debug-iphonesimulator/KZPMusicNotation.app/KZPMusicNotation normal i386d95bda4d3edcb941^7d08e24d3edcb941^---0#0#1#--1588"Ld Build/Products/Debug-iphonesimulator/KZPMusicNotation.app/KZPMusicNotation normal i386    cd "/Users/Matt/Developer/Objective C/KZPMusicNotation/Demo"    export IPHONEOS_DEPLOYMENT_TARGET=7.1    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -L/Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator -F/Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator -filelist /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/Objects-normal/i386/KZPMusicNotation.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=7.1 -framework CoreGraphics -framework UIKit -framework Foundation -Xlinker -dependency_info -Xlinker /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/Objects-normal/i386/KZPMusicNotation_dependency_info.dat -o /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/KZPMusicNotation.app/KZPMusicNotation36"D1BA8135-85A7-4059-ABA4-FB86D10F072A-
-bA195731A-D400-4B33-A46A-CA035E2247E2
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection135"Link /Users/Matt/Developer/Objective C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/KZPMusicNotation.app/KZPMusicNotation89"Ld Build/Products/Debug-iphonesimulator/KZPMusicNotation.app/KZPMusicNotation normal i386af06e0a942dcb941^02d5e7a942dcb941^---0#0#1#--1588"Ld Build/Products/Debug-iphonesimulator/KZPMusicNotation.app/KZPMusicNotation normal i386    cd "/Users/Matt/Developer/Objective C/KZPMusicNotation/Demo"    export IPHONEOS_DEPLOYMENT_TARGET=7.1    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -L/Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator -F/Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator -filelist /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/Objects-normal/i386/KZPMusicNotation.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=7.1 -framework CoreGraphics -framework UIKit -framework Foundation -Xlinker -dependency_info -Xlinker /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Intermediates/KZPMusicNotation.build/Debug-iphonesimulator/KZPMusicNotation.build/Objects-normal/i386/KZPMusicNotation_dependency_info.dat -o /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/KZPMusicNotation.app/KZPMusicNotation36"535DD3CC-5C6A-42B8-A581-B4F3081FE669-
+b51D05383-E4F7-4796-99FF-372D894C0C9D
 
 CProcessInfoPlistFile /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/KZPMusicNotation.app/Info.plist /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/KZPMusicNotation/KZPMusicNotation-Info.plist
 s433863235.011702
@@ -825,11 +830,11 @@ CProcessPCH /Users/Matt/Library/Developer/Xcode/DerivedData/KZPMusicNotation-bzp
 r0
 
 CTouch /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/KZPMusicNotation.app
-s433863235.057787
-e433863235.061117
+s433865519.969646
+e433865519.973418
 r1
 xTouch
 x/Users/Matt/Developer/Objective C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/KZPMusicNotation.app
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection119"Touch /Users/Matt/Developer/Objective C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/KZPMusicNotation.app63"Touch Build/Products/Debug-iphonesimulator/KZPMusicNotation.app1fdb0e433adcb941^f4a50f433adcb941^---0#0#1#--461"Touch Build/Products/Debug-iphonesimulator/KZPMusicNotation.app    cd "/Users/Matt/Developer/Objective C/KZPMusicNotation/Demo"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/KZPMusicNotation.app36"CDCA764F-8829-4F2D-8DC3-FEE2865BFE25-
-b43697E0B-5BE7-459E-A119-554FC2FD640A
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection119"Touch /Users/Matt/Developer/Objective C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/KZPMusicNotation.app63"Touch Build/Products/Debug-iphonesimulator/KZPMusicNotation.appdb51f82f43dcb941^2f32f92f43dcb941^---0#0#1#--461"Touch Build/Products/Debug-iphonesimulator/KZPMusicNotation.app    cd "/Users/Matt/Developer/Objective C/KZPMusicNotation/Demo"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/Matt/Developer/Objective\ C/KZPMusicNotation/Demo/Build/Products/Debug-iphonesimulator/KZPMusicNotation.app36"4A70C32C-5013-48A7-9908-C93FFEC95E16-
+bC0EFA235-EF5D-4C9A-8117-A85B45C7F7CE
 
