@@ -1,0 +1,30 @@
+<html>
+<head>
+	<script type="text/javascript" src="../vexflow-min.js"></script>
+	<script type="text/javascript" src="vexflow-tests.js"></script>
+	<script type="text/javascript" src="../vexflow-helper.js"></script>
+	<script type="text/javascript" src="../jquery-2.1.0.min.js"></script>
+</head>
+<body>
+	<canvas id='manuscript'></canvas>
+	<script type="text/javascript">
+
+    // Set up canvas
+	var canvas = $("#manuscript")[0];
+	var renderer = new Vex.Flow.Renderer(canvas, Vex.Flow.Renderer.Backends.CANVAS);
+	var ctx = renderer.getContext();
+    
+    // Calculate required canvas width during note creation
+
+    var notes = someMoreNotes();
+
+	canvas.width = 500;
+	canvas.height = 200;
+
+    var stave = aStave(ctx, 200);
+	
+	Vex.Flow.Formatter.FormatAndDraw(ctx,stave,notes);
+
+</script> 
+</body>
+</html>
