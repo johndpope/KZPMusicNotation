@@ -8,7 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		C91D9C2B19DC357900D33363 /* KZPMusicNotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = C91D9C2A19DC357900D33363 /* KZPMusicNotationView.m */; };
-		C91D9C2D19DC35A400D33363 /* Vexflow in Resources */ = {isa = PBXBuildFile; fileRef = C91D9C2C19DC35A400D33363 /* Vexflow */; };
+		C91D9C3E19E38C8900D33363 /* Vexpa in Resources */ = {isa = PBXBuildFile; fileRef = C91D9C3D19E38C8900D33363 /* Vexpa */; };
+		C91D9C4719E396DE00D33363 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C91D9C4619E396DE00D33363 /* Cocoa.framework */; };
+		C91D9C5119E396DE00D33363 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C91D9C4F19E396DE00D33363 /* InfoPlist.strings */; };
+		C91D9C5319E396DE00D33363 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C91D9C5219E396DE00D33363 /* main.m */; };
+		C91D9C5719E396DE00D33363 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C91D9C5519E396DE00D33363 /* Credits.rtf */; };
+		C91D9C5A19E396DE00D33363 /* KZPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C91D9C5919E396DE00D33363 /* KZPAppDelegate.m */; };
+		C91D9C5D19E396DE00D33363 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C91D9C5B19E396DE00D33363 /* MainMenu.xib */; };
+		C91D9C5F19E396DE00D33363 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91D9C5E19E396DE00D33363 /* Images.xcassets */; };
+		C91D9C7A19E39C4F00D33363 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C91D9C7919E39C4F00D33363 /* WebKit.framework */; };
+		C91D9C7B19E39E7B00D33363 /* KZPMusicNotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = C91D9C2A19DC357900D33363 /* KZPMusicNotationView.m */; };
+		C91D9C7F19E3A3C600D33363 /* Vexpa in Resources */ = {isa = PBXBuildFile; fileRef = C91D9C3D19E38C8900D33363 /* Vexpa */; };
 		C9A50B7419CEFDD70076D40B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A50B7319CEFDD70076D40B /* Foundation.framework */; };
 		C9A50B7619CEFDD70076D40B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A50B7519CEFDD70076D40B /* CoreGraphics.framework */; };
 		C9A50B7819CEFDD70076D40B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A50B7719CEFDD70076D40B /* UIKit.framework */; };
@@ -18,27 +28,27 @@
 		C9A50B8719CEFDD70076D40B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A50B8519CEFDD70076D40B /* Main.storyboard */; };
 		C9A50B8A19CEFDD70076D40B /* KZPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A50B8919CEFDD70076D40B /* KZPViewController.m */; };
 		C9A50B8C19CEFDD70076D40B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9A50B8B19CEFDD70076D40B /* Images.xcassets */; };
-		C9A50B9319CEFDD70076D40B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A50B9219CEFDD70076D40B /* XCTest.framework */; };
-		C9A50B9419CEFDD70076D40B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A50B7319CEFDD70076D40B /* Foundation.framework */; };
-		C9A50B9519CEFDD70076D40B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A50B7719CEFDD70076D40B /* UIKit.framework */; };
-		C9A50B9D19CEFDD70076D40B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9A50B9B19CEFDD70076D40B /* InfoPlist.strings */; };
-		C9A50B9F19CEFDD70076D40B /* KZPMusicNotationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A50B9E19CEFDD70076D40B /* KZPMusicNotationTests.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		C9A50B9619CEFDD70076D40B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C9A50B6819CEFDD70076D40B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C9A50B6F19CEFDD70076D40B;
-			remoteInfo = KZPMusicNotation;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		C91D9C2919DC357900D33363 /* KZPMusicNotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KZPMusicNotationView.h; path = ../Source/KZPMusicNotationView.h; sourceTree = "<group>"; };
 		C91D9C2A19DC357900D33363 /* KZPMusicNotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KZPMusicNotationView.m; path = ../Source/KZPMusicNotationView.m; sourceTree = "<group>"; };
-		C91D9C2C19DC35A400D33363 /* Vexflow */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Vexflow; path = ../Source/Vexflow; sourceTree = "<group>"; };
+		C91D9C3D19E38C8900D33363 /* Vexpa */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Vexpa; path = ../Source/Vexpa; sourceTree = "<group>"; };
+		C91D9C4519E396DE00D33363 /* KZPMusicNotationOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KZPMusicNotationOSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C91D9C4619E396DE00D33363 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		C91D9C4919E396DE00D33363 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C91D9C4A19E396DE00D33363 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C91D9C4B19E396DE00D33363 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C91D9C4E19E396DE00D33363 /* KZPMusicNotationOSX-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KZPMusicNotationOSX-Info.plist"; sourceTree = "<group>"; };
+		C91D9C5019E396DE00D33363 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C91D9C5219E396DE00D33363 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C91D9C5419E396DE00D33363 /* KZPMusicNotationOSX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KZPMusicNotationOSX-Prefix.pch"; sourceTree = "<group>"; };
+		C91D9C5619E396DE00D33363 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		C91D9C5819E396DE00D33363 /* KZPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KZPAppDelegate.h; path = KZPMusicNotationOSX/KZPAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		C91D9C5919E396DE00D33363 /* KZPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = KZPAppDelegate.m; path = KZPMusicNotationOSX/KZPAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		C91D9C5C19E396DE00D33363 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C91D9C5E19E396DE00D33363 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = KZPMusicNotationOSX/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		C91D9C7919E39C4F00D33363 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
 		C9A50B7019CEFDD70076D40B /* KZPMusicNotation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KZPMusicNotation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A50B7319CEFDD70076D40B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C9A50B7519CEFDD70076D40B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,14 +63,19 @@
 		C9A50B8819CEFDD70076D40B /* KZPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KZPViewController.h; sourceTree = "<group>"; };
 		C9A50B8919CEFDD70076D40B /* KZPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KZPViewController.m; sourceTree = "<group>"; };
 		C9A50B8B19CEFDD70076D40B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		C9A50B9119CEFDD70076D40B /* KZPMusicNotationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KZPMusicNotationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A50B9219CEFDD70076D40B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		C9A50B9A19CEFDD70076D40B /* KZPMusicNotationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KZPMusicNotationTests-Info.plist"; sourceTree = "<group>"; };
-		C9A50B9C19CEFDD70076D40B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C9A50B9E19CEFDD70076D40B /* KZPMusicNotationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KZPMusicNotationTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C91D9C4219E396DE00D33363 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C91D9C7A19E39C4F00D33363 /* WebKit.framework in Frameworks */,
+				C91D9C4719E396DE00D33363 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C9A50B6D19CEFDD70076D40B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -71,51 +86,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C9A50B8E19CEFDD70076D40B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C9A50B9319CEFDD70076D40B /* XCTest.framework in Frameworks */,
-				C9A50B9519CEFDD70076D40B /* UIKit.framework in Frameworks */,
-				C9A50B9419CEFDD70076D40B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C9A50B6719CEFDD70076D40B = {
+		C91D9C4819E396DE00D33363 /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C9A50BA819CEFE660076D40B /* KZPMusicNotation */,
-				C9A50B7919CEFDD70076D40B /* KZPMusicNotationDemo */,
-				C9A50B9819CEFDD70076D40B /* KZPMusicNotationTests */,
-				C9A50B7219CEFDD70076D40B /* Frameworks */,
-				C9A50B7119CEFDD70076D40B /* Products */,
+				C91D9C4919E396DE00D33363 /* AppKit.framework */,
+				C91D9C4A19E396DE00D33363 /* CoreData.framework */,
+				C91D9C4B19E396DE00D33363 /* Foundation.framework */,
 			);
+			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		C9A50B7119CEFDD70076D40B /* Products */ = {
+		C91D9C4D19E396DE00D33363 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C9A50B7019CEFDD70076D40B /* KZPMusicNotation.app */,
-				C9A50B9119CEFDD70076D40B /* KZPMusicNotationTests.xctest */,
+				C91D9C4E19E396DE00D33363 /* KZPMusicNotationOSX-Info.plist */,
+				C91D9C4F19E396DE00D33363 /* InfoPlist.strings */,
+				C91D9C5219E396DE00D33363 /* main.m */,
+				C91D9C5419E396DE00D33363 /* KZPMusicNotationOSX-Prefix.pch */,
+				C91D9C5519E396DE00D33363 /* Credits.rtf */,
 			);
-			name = Products;
-			sourceTree = "<group>";
+			name = "Supporting Files";
+			path = KZPMusicNotationOSX;
+			sourceTree = SOURCE_ROOT;
 		};
-		C9A50B7219CEFDD70076D40B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C9A50B7319CEFDD70076D40B /* Foundation.framework */,
-				C9A50B7519CEFDD70076D40B /* CoreGraphics.framework */,
-				C9A50B7719CEFDD70076D40B /* UIKit.framework */,
-				C9A50B9219CEFDD70076D40B /* XCTest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C9A50B7919CEFDD70076D40B /* KZPMusicNotationDemo */ = {
+		C91D9C7719E396EF00D33363 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				C9A50B8219CEFDD70076D40B /* KZPAppDelegate.h */,
@@ -125,6 +122,60 @@
 				C9A50B8919CEFDD70076D40B /* KZPViewController.m */,
 				C9A50B8B19CEFDD70076D40B /* Images.xcassets */,
 				C9A50B7A19CEFDD70076D40B /* Supporting Files */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C91D9C7819E396F400D33363 /* OSX */ = {
+			isa = PBXGroup;
+			children = (
+				C91D9C5819E396DE00D33363 /* KZPAppDelegate.h */,
+				C91D9C5919E396DE00D33363 /* KZPAppDelegate.m */,
+				C91D9C5B19E396DE00D33363 /* MainMenu.xib */,
+				C91D9C5E19E396DE00D33363 /* Images.xcassets */,
+				C91D9C4D19E396DE00D33363 /* Supporting Files */,
+			);
+			name = OSX;
+			sourceTree = "<group>";
+		};
+		C9A50B6719CEFDD70076D40B = {
+			isa = PBXGroup;
+			children = (
+				C9A50BA819CEFE660076D40B /* KZPMusicNotation */,
+				C9A50B7919CEFDD70076D40B /* KZPMusicNotationDemo */,
+				C9A50B7219CEFDD70076D40B /* Frameworks */,
+				C9A50B7119CEFDD70076D40B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9A50B7119CEFDD70076D40B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9A50B7019CEFDD70076D40B /* KZPMusicNotation.app */,
+				C91D9C4519E396DE00D33363 /* KZPMusicNotationOSX.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9A50B7219CEFDD70076D40B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C91D9C7919E39C4F00D33363 /* WebKit.framework */,
+				C9A50B7319CEFDD70076D40B /* Foundation.framework */,
+				C9A50B7519CEFDD70076D40B /* CoreGraphics.framework */,
+				C9A50B7719CEFDD70076D40B /* UIKit.framework */,
+				C9A50B9219CEFDD70076D40B /* XCTest.framework */,
+				C91D9C4619E396DE00D33363 /* Cocoa.framework */,
+				C91D9C4819E396DE00D33363 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9A50B7919CEFDD70076D40B /* KZPMusicNotationDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C91D9C7819E396F400D33363 /* OSX */,
+				C91D9C7719E396EF00D33363 /* iOS */,
 			);
 			name = KZPMusicNotationDemo;
 			path = KZPMusicNotation;
@@ -141,28 +192,10 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C9A50B9819CEFDD70076D40B /* KZPMusicNotationTests */ = {
-			isa = PBXGroup;
-			children = (
-				C9A50B9E19CEFDD70076D40B /* KZPMusicNotationTests.m */,
-				C9A50B9919CEFDD70076D40B /* Supporting Files */,
-			);
-			path = KZPMusicNotationTests;
-			sourceTree = "<group>";
-		};
-		C9A50B9919CEFDD70076D40B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C9A50B9A19CEFDD70076D40B /* KZPMusicNotationTests-Info.plist */,
-				C9A50B9B19CEFDD70076D40B /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		C9A50BA819CEFE660076D40B /* KZPMusicNotation */ = {
 			isa = PBXGroup;
 			children = (
-				C91D9C2C19DC35A400D33363 /* Vexflow */,
+				C91D9C3D19E38C8900D33363 /* Vexpa */,
 				C91D9C2919DC357900D33363 /* KZPMusicNotationView.h */,
 				C91D9C2A19DC357900D33363 /* KZPMusicNotationView.m */,
 			);
@@ -172,9 +205,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C9A50B6F19CEFDD70076D40B /* KZPMusicNotation */ = {
+		C91D9C4419E396DE00D33363 /* KZPMusicNotationOSX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C9A50BA219CEFDD70076D40B /* Build configuration list for PBXNativeTarget "KZPMusicNotation" */;
+			buildConfigurationList = C91D9C7119E396DE00D33363 /* Build configuration list for PBXNativeTarget "KZPMusicNotationOSX" */;
+			buildPhases = (
+				C91D9C4119E396DE00D33363 /* Sources */,
+				C91D9C4219E396DE00D33363 /* Frameworks */,
+				C91D9C4319E396DE00D33363 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KZPMusicNotationOSX;
+			productName = KZPMusicNotationOSX;
+			productReference = C91D9C4519E396DE00D33363 /* KZPMusicNotationOSX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C9A50B6F19CEFDD70076D40B /* KZPMusicNotationiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9A50BA219CEFDD70076D40B /* Build configuration list for PBXNativeTarget "KZPMusicNotationiOS" */;
 			buildPhases = (
 				C9A50B6C19CEFDD70076D40B /* Sources */,
 				C9A50B6D19CEFDD70076D40B /* Frameworks */,
@@ -184,28 +234,10 @@
 			);
 			dependencies = (
 			);
-			name = KZPMusicNotation;
+			name = KZPMusicNotationiOS;
 			productName = KZPMusicNotation;
 			productReference = C9A50B7019CEFDD70076D40B /* KZPMusicNotation.app */;
 			productType = "com.apple.product-type.application";
-		};
-		C9A50B9019CEFDD70076D40B /* KZPMusicNotationTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C9A50BA519CEFDD70076D40B /* Build configuration list for PBXNativeTarget "KZPMusicNotationTests" */;
-			buildPhases = (
-				C9A50B8D19CEFDD70076D40B /* Sources */,
-				C9A50B8E19CEFDD70076D40B /* Frameworks */,
-				C9A50B8F19CEFDD70076D40B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C9A50B9719CEFDD70076D40B /* PBXTargetDependency */,
-			);
-			name = KZPMusicNotationTests;
-			productName = KZPMusicNotationTests;
-			productReference = C9A50B9119CEFDD70076D40B /* KZPMusicNotationTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -216,11 +248,6 @@
 				CLASSPREFIX = KZP;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Sudoseng;
-				TargetAttributes = {
-					C9A50B9019CEFDD70076D40B = {
-						TestTargetID = C9A50B6F19CEFDD70076D40B;
-					};
-				};
 			};
 			buildConfigurationList = C9A50B6B19CEFDD70076D40B /* Build configuration list for PBXProject "KZPMusicNotation" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -235,35 +262,49 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C9A50B6F19CEFDD70076D40B /* KZPMusicNotation */,
-				C9A50B9019CEFDD70076D40B /* KZPMusicNotationTests */,
+				C9A50B6F19CEFDD70076D40B /* KZPMusicNotationiOS */,
+				C91D9C4419E396DE00D33363 /* KZPMusicNotationOSX */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C91D9C4319E396DE00D33363 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C91D9C7F19E3A3C600D33363 /* Vexpa in Resources */,
+				C91D9C5119E396DE00D33363 /* InfoPlist.strings in Resources */,
+				C91D9C5F19E396DE00D33363 /* Images.xcassets in Resources */,
+				C91D9C5719E396DE00D33363 /* Credits.rtf in Resources */,
+				C91D9C5D19E396DE00D33363 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C9A50B6E19CEFDD70076D40B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C9A50B8C19CEFDD70076D40B /* Images.xcassets in Resources */,
+				C91D9C3E19E38C8900D33363 /* Vexpa in Resources */,
 				C9A50B7E19CEFDD70076D40B /* InfoPlist.strings in Resources */,
-				C91D9C2D19DC35A400D33363 /* Vexflow in Resources */,
 				C9A50B8719CEFDD70076D40B /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C9A50B8F19CEFDD70076D40B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C9A50B9D19CEFDD70076D40B /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C91D9C4119E396DE00D33363 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C91D9C5A19E396DE00D33363 /* KZPAppDelegate.m in Sources */,
+				C91D9C7B19E39E7B00D33363 /* KZPMusicNotationView.m in Sources */,
+				C91D9C5319E396DE00D33363 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C9A50B6C19CEFDD70076D40B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -275,25 +316,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C9A50B8D19CEFDD70076D40B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C9A50B9F19CEFDD70076D40B /* KZPMusicNotationTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		C9A50B9719CEFDD70076D40B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C9A50B6F19CEFDD70076D40B /* KZPMusicNotation */;
-			targetProxy = C9A50B9619CEFDD70076D40B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
+		C91D9C4F19E396DE00D33363 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C91D9C5019E396DE00D33363 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C91D9C5519E396DE00D33363 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C91D9C5619E396DE00D33363 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		C91D9C5B19E396DE00D33363 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C91D9C5C19E396DE00D33363 /* Base */,
+			);
+			name = MainMenu.xib;
+			path = KZPMusicNotationOSX;
+			sourceTree = SOURCE_ROOT;
+		};
 		C9A50B7C19CEFDD70076D40B /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -310,17 +360,54 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		C9A50B9B19CEFDD70076D40B /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C9A50B9C19CEFDD70076D40B /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C91D9C7219E396DE00D33363 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KZPMusicNotationOSX/KZPMusicNotationOSX-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KZPMusicNotationOSX/KZPMusicNotationOSX-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C91D9C7319E396DE00D33363 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KZPMusicNotationOSX/KZPMusicNotationOSX-Prefix.pch";
+				INFOPLIST_FILE = "KZPMusicNotationOSX/KZPMusicNotationOSX-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		C9A50BA019CEFDD70076D40B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -419,49 +506,17 @@
 			};
 			name = Release;
 		};
-		C9A50BA619CEFDD70076D40B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KZPMusicNotation.app/KZPMusicNotation";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KZPMusicNotation/KZPMusicNotation-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "KZPMusicNotationTests/KZPMusicNotationTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		C9A50BA719CEFDD70076D40B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KZPMusicNotation.app/KZPMusicNotation";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KZPMusicNotation/KZPMusicNotation-Prefix.pch";
-				INFOPLIST_FILE = "KZPMusicNotationTests/KZPMusicNotationTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C91D9C7119E396DE00D33363 /* Build configuration list for PBXNativeTarget "KZPMusicNotationOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C91D9C7219E396DE00D33363 /* Debug */,
+				C91D9C7319E396DE00D33363 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		C9A50B6B19CEFDD70076D40B /* Build configuration list for PBXProject "KZPMusicNotation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -471,20 +526,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C9A50BA219CEFDD70076D40B /* Build configuration list for PBXNativeTarget "KZPMusicNotation" */ = {
+		C9A50BA219CEFDD70076D40B /* Build configuration list for PBXNativeTarget "KZPMusicNotationiOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C9A50BA319CEFDD70076D40B /* Debug */,
 				C9A50BA419CEFDD70076D40B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C9A50BA519CEFDD70076D40B /* Build configuration list for PBXNativeTarget "KZPMusicNotationTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C9A50BA619CEFDD70076D40B /* Debug */,
-				C9A50BA719CEFDD70076D40B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

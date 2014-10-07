@@ -9,7 +9,7 @@
 #import "KZPViewController.h"
 #import "KZPMusicNotationView.h"
 
-@interface KZPViewController ()
+@interface KZPViewController () <KZPMusicNotationViewDelegate>
 
 @property (weak, nonatomic) IBOutlet KZPMusicNotationView *canvas;
 @property (weak, nonatomic) IBOutlet UITextField *textField;
@@ -21,6 +21,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.canvas.musicNotationDelegate = self;
+    self.canvas.shouldAutomaticallyResize = NO;
     [self.textField addTarget:self action:@selector(textFieldDidChange:)
         forControlEvents:UIControlEventEditingChanged];
 }
@@ -31,5 +33,16 @@
 }
 
 
+#pragma mark - KZPMusicNotationDelegate -
+
+- (void)notationViewFailedToProcess
+{
+    NSLog(@"Failed to process string: %@", self.textField.text);
+}
+
+- (void)notationViewHasNewContentSize:(CGSize)size
+{
+    // Do something with the new content size
+}
 
 @end

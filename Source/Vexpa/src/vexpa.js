@@ -50,14 +50,19 @@ function drawScore(bars, beams, staveNotes) {
 
 	// Bars (staves)
 	for (var i = 0; i < bars.length; i++) {
-		if (bars[i].isPercussionStave) {
+		if (bars[i].voice.isPercussionStave) {
 			convertStaveToPercussion(bars[i]);	
 		} 
 		bars[i].setContext(ctx).draw();
 		bars[i].voice.draw(ctx, bars[i]);
 
 		if (bars[i].connectedStave) {
-			new Vex.Flow.StaveConnector(bars[i].connectedStave, bars[i]).setType(Vex.Flow.StaveConnector.type.SINGLE).setContext(ctx).draw();				
+			new Vex.Flow.StaveConnector(
+				bars[i].connectedStave.bar, bars[i]
+			).setType(Vex.Flow.StaveConnector.type.SINGLE_LEFT).setContext(ctx).draw();
+			new Vex.Flow.StaveConnector(
+			    bars[i].connectedStave.bar, bars[i]
+			).setType(Vex.Flow.StaveConnector.type.SINGLE_RIGHT).setContext(ctx).draw();
 		}
 	}
 
@@ -91,41 +96,73 @@ function drawScore(bars, beams, staveNotes) {
 function renderVexpaString(vexpaString) {
 	var staveStrings = vexpaString.split("\\");
 	var ctx = manuscriptContext();
+	var voices = [];
 	var bars = [];
 	var staves = [];
 	var beams = [];
 	var staveNotes = [];
-	var staveWidth = 0;
-	var yPosition = 10;
+	var scoreWidth = 0;
 
 	for (var i = 0; i < staveStrings.length; i++) {
-		var staveData = renderStaveString(staveStrings[i].trim(), yPosition);
-		bars = bars.concat(staveData.bars);
-		staves.push(bars);
+		var staveData = renderStaveString(staveStrings[i].trim());
+		staves.push(staveData.voices);
 		beams = beams.concat(staveData.beams);
 		staveNotes = staveNotes.concat(staveData.staveNotes);
-		if (staveData.staveWidth > staveWidth) {
-			staveWidth = staveData.staveWidth;
-		} 
-		if (i > 0) {
-			staveData.bars[0].connectedStave = staves[i-1][0];	
-		}
-		yPosition += 100;
 	}
 
-	setCanvasSize(staveWidth+50, yPosition+50);	
+	var barWidths = new Array(staves[0].length);
+
+	// Get all bar widths
+	for (var i = 0; i < staves.length; i++) {
+		for (var j = 0; j < staves[i].length; j++) {
+			var voice = staves[i][j];
+			if (voice.barWidth > barWidths[j] || !barWidths[j]) {
+				barWidths[j] = voice.barWidth;
+			}
+		}
+	}
+
+	// Format all bars
+	var yPosition = 0;
+	for (var i = 0; i < staves.length; i++) {
+		var xPosition = 10;
+		for (var j = 0; j < staves[i].length; j++) {
+			var voice = staves[i][j];
+			var width = barWidths[j];
+			var bar = new Vex.Flow.Stave(xPosition, yPosition, width);
+			bar.voice = voice;
+			voice.bar = bar;
+			new Vex.Flow.Formatter().formatToStave([voice], bar, {alignRests: true});
+			bars.push(bar);
+			if (i == 0) {
+				scoreWidth += width;
+			}			
+			xPosition += width;
+			if (i > 0) {
+				bar.connectedStave = staves[i-1][j];	
+			}
+			if (voice.isPercussionStave && j == 0) {
+				bar.addClef("percussion");
+			} 			
+		}
+		if (staves[i][0].isPercussionStave) {
+			yPosition += 70;
+		} else {
+			yPosition += 100;
+		}		
+	}
+
+	setCanvasSize(scoreWidth+50, yPosition+50);	
 	drawScore(bars, beams, staveNotes);
-	return [staveWidth+50, yPosition+50].toString();
+	return [scoreWidth+50, yPosition+50].toString();
 }
 
 
 //
 // Stave (handle clef)
 //
-function renderStaveString(staveString, yPosition) {
+function renderStaveString(staveString) {
 	var barStrings = staveString.split("|");
-	var bars = []; // staves
-	var xPosition = 10;
 	var voices = [];
 	var beams = [];
 	var staveNotes = [];
@@ -134,29 +171,22 @@ function renderStaveString(staveString, yPosition) {
 	var maxHeight = 0;
 
 	for (var i = 0; i < barStrings.length; i++) {
-		var origin = {
-			x: xPosition,
-			y: yPosition
-		};
-		var barData = renderBarString(barStrings[i].trim(), origin);
-		var bar = barData.bar;
-		bars.push(bar);
-		xPosition += barData.bar.width;
-		voices.push(barData.voice);
+		var barData = renderBarString(barStrings[i].trim());
+		var voice = barData.voice;
+		voices.push(voice);
 		beams = beams.concat(barData.beams);
 		staveNotes = staveNotes.concat(barData.staveNotes);
 		isPercussionStave = isPercussionStave || barData.isPercussion;
 	}
 
-	for (var i = 0; i < bars.length; i++) {
-		bars[i].isPercussionStave = isPercussionStave;
+	for (var i = 0; i < voices.length; i++) {
+		voices[i].isPercussionStave = isPercussionStave;
 	}
 
 	return {
-		bars: bars,
+		voices: voices,
 		beams: beams,
 		staveNotes: staveNotes,
-		staveWidth: xPosition
 	};
 }
 
@@ -171,7 +201,7 @@ function convertStaveToPercussion(stave) {
 //
 // Bar (handle T/S)
 //
-function renderBarString(barString, origin) {
+function renderBarString(barString) {
 	// check for TS/clef later
 
 	var groupStrings = barString.split("'");
@@ -195,8 +225,6 @@ function renderBarString(barString, origin) {
 		isPercussionBar = isPercussionBar || groupData.isPercussion;
 	}
 
-	var bar = new Vex.Flow.Stave(origin.x, origin.y, barWidth);
-
 	var voice = new Vex.Flow.Voice({
 		num_beats: totalDuration * minBeatValue,
 		beat_value: minBeatValue,
@@ -204,11 +232,10 @@ function renderBarString(barString, origin) {
 	});
 
 	voice.addTickables(barNotes);
-	new Vex.Flow.Formatter().formatToStave([voice], bar, {alignRests: true});
-	bar.voice = voice;
+	voice.barWidth = barWidth;
 
 	return {
-		bar: bar,
+		voice: voice,
 		beams: beams,
 		staveNotes: barNotes,
 		isPercussion: isPercussionBar

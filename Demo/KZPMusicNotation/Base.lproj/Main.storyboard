@@ -9,8 +9,8 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="KZPViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="fKH-ms-8sW"/>
+                        <viewControllerLayoutGuide type="bottom" id="X04-1d-V4I"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
