@@ -10,6 +10,7 @@
 @interface KZPMusicNotationView ()
 
 @property (strong, nonatomic) NSMutableArray *commandQueue;
+@property (nonatomic) BOOL loaded;
 
 @end
 
@@ -40,6 +41,7 @@
 
 - (void)setup
 {
+    _loaded = NO;
     NSString *resourcesPath = [[NSBundle mainBundle] resourcePath];
     NSString *htmlPath = [resourcesPath stringByAppendingString:@"/Vexpa/index.html"];
     
@@ -84,7 +86,7 @@
 
 - (void)enqueueCommand:(NSDictionary *)command
 {
-    if (![self isLoading]) {
+    if (self.loaded) {
         [self executeJavascriptCommand:command];
     } else {
         [self.commandQueue addObject:command];
@@ -141,11 +143,13 @@
 #if TARGET_IPHONE_SIMULATOR || TARGET_OS_IPHONE
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
+    _loaded = YES;
     [self releaseCommandQueue];
 }
 #else
 - (void)webView:(WebView *)sender didFinishLoadForFrame:(WebFrame *)frame
 {
+    _loaded = YES;
     [self releaseCommandQueue];
 }
 #endif
