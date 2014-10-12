@@ -143,7 +143,17 @@ function renderVexpaString(vexpaString) {
 			}
 			if (voice.isPercussionStave && j == 0) {
 				bar.addClef("percussion");
-			} 			
+			} else {
+				if (voice.clef) {
+					bar.addClef(voice.clef);
+				}
+				if (voice.keysig) {
+					bar.addKeySignature(voice.keysig);
+				}				
+			}	
+			if (voice.timesig) {
+				bar.addTimeSignature(voice.timesig);
+			}
 		}
 		if (staves[i][0].isPercussionStave) {
 			yPosition += 70;
@@ -171,12 +181,14 @@ function renderStaveString(staveString) {
 	var maxHeight = 0;
 
 	for (var i = 0; i < barStrings.length; i++) {
-		var barData = renderBarString(barStrings[i].trim());
-		var voice = barData.voice;
-		voices.push(voice);
-		beams = beams.concat(barData.beams);
-		staveNotes = staveNotes.concat(barData.staveNotes);
-		isPercussionStave = isPercussionStave || barData.isPercussion;
+		if (barStrings[i].trim() != "") {
+			var barData = renderBarString(barStrings[i].trim());
+			var voice = barData.voice;
+			voices.push(voice);
+			beams = beams.concat(barData.beams);
+			staveNotes = staveNotes.concat(barData.staveNotes);
+			isPercussionStave = isPercussionStave || barData.isPercussion;
+		}
 	}
 
 	for (var i = 0; i < voices.length; i++) {
@@ -202,8 +214,7 @@ function convertStaveToPercussion(stave) {
 // Bar (handle T/S)
 //
 function renderBarString(barString) {
-	// check for TS/clef later
-
+	
 	var groupStrings = barString.split("'");
 	var barNotes = [];
 	var beams = [];
@@ -212,17 +223,23 @@ function renderBarString(barString) {
 	var totalDuration = 0.0;
 	var barWidth = 0;
 	var isPercussionBar = false;
+	var staveSettings;
 
 	for (var i = 0; i < groupStrings.length; i++) {
-		var groupData = renderGroupString(groupStrings[i].trim());
-		barNotes = barNotes.concat(groupData.staveNotes);
-		beams = beams.concat(groupData.beams);
-		if (groupData.minBeatValue > minBeatValue) {
-			minBeatValue = groupData.minBeatValue;
+		if (groupStrings[i].trim() != "") {
+			var groupData = renderGroupString(groupStrings[i].trim());
+			if (groupData.settings) {
+				staveSettings = groupData.settings;
+			}
+			barNotes = barNotes.concat(groupData.staveNotes);
+			beams = beams.concat(groupData.beams);
+			if (groupData.minBeatValue > minBeatValue) {
+				minBeatValue = groupData.minBeatValue;
+			}
+			totalDuration += groupData.totalDuration;
+			barWidth += groupData.groupWidth;
+			isPercussionBar = isPercussionBar || groupData.isPercussion;
 		}
-		totalDuration += groupData.totalDuration;
-		barWidth += groupData.groupWidth;
-		isPercussionBar = isPercussionBar || groupData.isPercussion;
 	}
 
 	var voice = new Vex.Flow.Voice({
@@ -233,6 +250,9 @@ function renderBarString(barString) {
 
 	voice.addTickables(barNotes);
 	voice.barWidth = barWidth;
+	voice.clef = staveSettings.clef;
+	voice.keysig = staveSettings.keysig;
+	voice.timesig = staveSettings.timesig;
 
 	return {
 		voice: voice,
@@ -255,30 +275,45 @@ function renderGroupString(groupString) {
 	var totalDuration = 0.0;
 	var groupWidth = 0;
 	var isPercussionGroup = false;
+	var staveSettings = {};
 
 	for (var i = 0; i < staveNoteStrings.length; i++) {
 
-		var staveNote = parseStaveNoteString(staveNoteStrings[i]);
+		if (staveNoteStrings[i].indexOf('=') === -1) {
+			var staveNote = parseStaveNoteString(staveNoteStrings[i], staveSettings.clef);
 
-		isPercussionGroup = isPercussionGroup || staveNote.isUnpitched;
+			isPercussionGroup = isPercussionGroup || staveNote.isUnpitched;
 
-		groupNotes.push(staveNote);
-		groupWidth += ELEMENT_WIDTHS[staveNote.duration];
+			groupNotes.push(staveNote);
+			groupWidth += ELEMENT_WIDTHS[staveNote.duration];
 
-		var duration = DURATIONS[staveNote.duration];
-		if (duration > minBeatValue	) {
-			minBeatValue = duration;
-		}
-		totalDuration += (1/duration) * (staveNote.isDotted == true ? 1.5 : 1.0);
-
-		if (duration > 4) {
-			beamNotes.push(staveNote);
-		} else {
-			if (beamNotes.length > 1) {
-				beams.push(new Vex.Flow.Beam(beamNotes));
+			var duration = DURATIONS[staveNote.duration];
+			if (duration > minBeatValue	) {
+				minBeatValue = duration;
 			}
-			beamNotes = [];
+			totalDuration += (1/duration) * (staveNote.isDotted == true ? 1.5 : 1.0);
+
+			if (duration > 4) {
+				beamNotes.push(staveNote);
+			} else {
+				if (beamNotes.length > 1) {
+					beams.push(new Vex.Flow.Beam(beamNotes));
+				}
+				beamNotes = [];
+			}
+		} else {
+			if (parseSettingString(staveNoteStrings[i]).clef) {
+				staveSettings.clef = parseSettingString(staveNoteStrings[i]).clef;
+			}
+			if (parseSettingString(staveNoteStrings[i]).keysig) {
+				staveSettings.keysig = parseSettingString(staveNoteStrings[i]).keysig;
+			}
+			if (parseSettingString(staveNoteStrings[i]).timesig) {
+				staveSettings.timesig = parseSettingString(staveNoteStrings[i]).timesig;
+
+			}			
 		}
+
 	}
 
 	if (beamNotes.length > 1) {
@@ -286,6 +321,7 @@ function renderGroupString(groupString) {
 	}
 	
 	return {
+		settings: staveSettings,
 		beams: beams,
 		staveNotes: groupNotes,
 		minBeatValue: minBeatValue,
@@ -295,11 +331,24 @@ function renderGroupString(groupString) {
 	};
 }
 
+function parseSettingString(settingString) {
+	var settingElements = settingString.split("=");
+	if (settingElements[0] == "Q") {
+		return {clef: settingElements[1]};
+	}
+	if (settingElements[0] == "T") {
+		return {timesig: settingElements[1]};
+	}
+	if (settingElements[0] == "K") {
+		return {keysig: settingElements[1]};
+	}
+}
+
 
 //
 // StaveNote (maybe be pitch/duration, duration, or pitch)
 //
-function parseStaveNoteString(staveNoteString) {
+function parseStaveNoteString(staveNoteString, clef) {
 	var staveNoteElements = staveNoteString.split("/");
 	var durationData;
 	var notes;
@@ -336,7 +385,8 @@ function parseStaveNoteString(staveNoteString) {
 
 	var staveNote = new Vex.Flow.StaveNote({
 		keys: notes,
-		duration: durationData.durString
+		duration: durationData.durString,
+		clef: clef
 	});
 
 	if (durationOnly) {
