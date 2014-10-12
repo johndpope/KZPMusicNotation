@@ -132,7 +132,6 @@ function renderVexpaString(vexpaString) {
 			var bar = new Vex.Flow.Stave(xPosition, yPosition, width);
 			bar.voice = voice;
 			voice.bar = bar;
-			new Vex.Flow.Formatter().formatToStave([voice], bar, {alignRests: true});
 			bars.push(bar);
 			if (i == 0) {
 				scoreWidth += width;
@@ -154,6 +153,7 @@ function renderVexpaString(vexpaString) {
 			if (voice.timesig) {
 				bar.addTimeSignature(voice.timesig);
 			}
+			new Vex.Flow.Formatter().formatToStave([voice], bar, {alignRests: true});
 		}
 		if (staves[i][0].isPercussionStave) {
 			yPosition += 70;
