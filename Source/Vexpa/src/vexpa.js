@@ -223,14 +223,12 @@ function renderBarString(barString) {
 	var totalDuration = 0.0;
 	var barWidth = 0;
 	var isPercussionBar = false;
-	var staveSettings;
+	var staveSettings = {};
 
 	for (var i = 0; i < groupStrings.length; i++) {
 		if (groupStrings[i].trim() != "") {
-			var groupData = renderGroupString(groupStrings[i].trim());
-			if (groupData.settings) {
-				staveSettings = groupData.settings;
-			}
+			var groupData = renderGroupString(groupStrings[i].trim(), staveSettings.clef);
+			$.extend(staveSettings, groupData.settings);
 			barNotes = barNotes.concat(groupData.staveNotes);
 			beams = beams.concat(groupData.beams);
 			if (groupData.minBeatValue > minBeatValue) {
@@ -266,7 +264,7 @@ function renderBarString(barString) {
 //
 // Group
 //
-function renderGroupString(groupString) {
+function renderGroupString(groupString, clef) {
 	var staveNoteStrings = groupString.split(" ");
 	var groupNotes = [];
 	var beamNotes = [];
@@ -280,7 +278,8 @@ function renderGroupString(groupString) {
 	for (var i = 0; i < staveNoteStrings.length; i++) {
 
 		if (staveNoteStrings[i].indexOf('=') === -1) {
-			var staveNote = parseStaveNoteString(staveNoteStrings[i], staveSettings.clef);
+			var activeClef = clef ? clef : staveSettings.clef;
+			var staveNote = parseStaveNoteString(staveNoteStrings[i], activeClef);
 
 			isPercussionGroup = isPercussionGroup || staveNote.isUnpitched;
 
@@ -310,7 +309,6 @@ function renderGroupString(groupString) {
 			}
 			if (parseSettingString(staveNoteStrings[i]).timesig) {
 				staveSettings.timesig = parseSettingString(staveNoteStrings[i]).timesig;
-
 			}			
 		}
 
