@@ -177,13 +177,17 @@ function renderStaveString(staveString) {
 	var beams = [];
 	var staveNotes = [];
 	var isPercussionStave = false;
+	var activeClef = "treble";
 
 	var maxHeight = 0;
 
 	for (var i = 0; i < barStrings.length; i++) {
 		if (barStrings[i].trim() != "") {
-			var barData = renderBarString(barStrings[i].trim());
+			var barData = renderBarString(barStrings[i].trim(), activeClef);
 			var voice = barData.voice;
+			if (voice.clef) {
+				activeClef = voice.clef;
+			}
 			voices.push(voice);
 			beams = beams.concat(barData.beams);
 			staveNotes = staveNotes.concat(barData.staveNotes);
@@ -213,7 +217,7 @@ function convertStaveToPercussion(stave) {
 //
 // Bar (handle T/S)
 //
-function renderBarString(barString) {
+function renderBarString(barString, activeClef) {
 	
 	var groupStrings = barString.split("'");
 	var barNotes = [];
@@ -227,7 +231,8 @@ function renderBarString(barString) {
 
 	for (var i = 0; i < groupStrings.length; i++) {
 		if (groupStrings[i].trim() != "") {
-			var groupData = renderGroupString(groupStrings[i].trim(), staveSettings.clef);
+			var clef = staveSettings.clef ? staveSettings.clef : activeClef;
+			var groupData = renderGroupString(groupStrings[i].trim(), clef);
 			$.extend(staveSettings, groupData.settings);
 			barNotes = barNotes.concat(groupData.staveNotes);
 			beams = beams.concat(groupData.beams);
@@ -264,7 +269,7 @@ function renderBarString(barString) {
 //
 // Group
 //
-function renderGroupString(groupString, clef) {
+function renderGroupString(groupString, activeClef) {
 	var staveNoteStrings = groupString.split(" ");
 	var groupNotes = [];
 	var beamNotes = [];
@@ -278,8 +283,8 @@ function renderGroupString(groupString, clef) {
 	for (var i = 0; i < staveNoteStrings.length; i++) {
 
 		if (staveNoteStrings[i].indexOf('=') === -1) {
-			var activeClef = clef ? clef : staveSettings.clef;
-			var staveNote = parseStaveNoteString(staveNoteStrings[i], activeClef);
+			var clef = staveSettings.clef ? staveSettings.clef : activeClef;
+			var staveNote = parseStaveNoteString(staveNoteStrings[i], clef);
 
 			isPercussionGroup = isPercussionGroup || staveNote.isUnpitched;
 
