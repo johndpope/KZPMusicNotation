@@ -49,7 +49,7 @@
 		C91D9C5C19E396DE00D33363 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		C91D9C5E19E396DE00D33363 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = KZPMusicNotationOSX/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		C91D9C7919E39C4F00D33363 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
-		C9A50B7019CEFDD70076D40B /* KZPMusicNotation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KZPMusicNotation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9A50B7019CEFDD70076D40B /* KZPMusicNotationiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KZPMusicNotationiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A50B7319CEFDD70076D40B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C9A50B7519CEFDD70076D40B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		C9A50B7719CEFDD70076D40B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -151,7 +151,7 @@
 		C9A50B7119CEFDD70076D40B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C9A50B7019CEFDD70076D40B /* KZPMusicNotation.app */,
+				C9A50B7019CEFDD70076D40B /* KZPMusicNotationiOS.app */,
 				C91D9C4519E396DE00D33363 /* KZPMusicNotationOSX.app */,
 			);
 			name = Products;
@@ -236,7 +236,7 @@
 			);
 			name = KZPMusicNotationiOS;
 			productName = KZPMusicNotation;
-			productReference = C9A50B7019CEFDD70076D40B /* KZPMusicNotation.app */;
+			productReference = C9A50B7019CEFDD70076D40B /* KZPMusicNotationiOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -516,6 +516,7 @@
 				C91D9C7319E396DE00D33363 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9A50B6B19CEFDD70076D40B /* Build configuration list for PBXProject "KZPMusicNotation" */ = {
 			isa = XCConfigurationList;

@@ -447,7 +447,7 @@ function parseNote(noteString) {
 	var accidental = noteString.charAt(1);
 	if (accidental !== register) {
 		switch (accidental) {
-			case "&": accidental = "bb"; break;
+			case "B": accidental = "bb"; break;
 			case "x": accidental = "##"; break;
 		}
 	} else {
