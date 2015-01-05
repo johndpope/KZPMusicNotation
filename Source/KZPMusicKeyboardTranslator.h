@@ -12,6 +12,6 @@
 
 @interface KZPMusicKeyboardTranslator : NSObject <KZPMusicKeyboardDelegate, KZPMusicNotationViewDelegate>
 
-@property (strong, nonatomic) KZPMusicNotationView *musicNotation;
+- (instancetype)initWithNotationView:(KZPMusicNotationView *)notationView;
 
 @end

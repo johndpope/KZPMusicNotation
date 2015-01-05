@@ -12,16 +12,24 @@
 
 @interface KZPMusicKeyboardTranslator ()
 
+@property (strong, nonatomic) KZPMusicNotationView *musicNotation;
 @property (strong, nonatomic) NSMutableArray *vexpaComponents;
 
 @end
 
 @implementation KZPMusicKeyboardTranslator
 
-- (instancetype)init
+- (instancetype)initWithNotationView:(KZPMusicNotationView *)notationView
 {
+    if (!notationView) {
+        NSLog(@"Error: translator must be initialised with existing notation view");
+        return nil;
+    }
+    
     self = [super init];
     if (self) {
+        _musicNotation = notationView;
+        _musicNotation.musicNotationDelegate = self;
         _vexpaComponents = [NSMutableArray array];
     }
     return self;
@@ -30,6 +38,12 @@
 - (void)render
 {
     [self.musicNotation renderNotationString:[self.vexpaComponents oneLineDescriptionUsingDelimiter:@" "]];
+}
+
+- (void)setMusicNotation:(KZPMusicNotationView *)musicNotation
+{
+    _musicNotation = musicNotation;    
+    _musicNotation.musicNotationDelegate = self;
 }
 
 
