@@ -28,6 +28,7 @@
 		C9A50B8719CEFDD70076D40B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A50B8519CEFDD70076D40B /* Main.storyboard */; };
 		C9A50B8A19CEFDD70076D40B /* KZPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A50B8919CEFDD70076D40B /* KZPViewController.m */; };
 		C9A50B8C19CEFDD70076D40B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9A50B8B19CEFDD70076D40B /* Images.xcassets */; };
+		C9AED3B01A5A4BEA0050733C /* KZPMusicKeyboardTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AED3AF1A5A4BEA0050733C /* KZPMusicKeyboardTranslator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,8 @@
 		C9A50B8919CEFDD70076D40B /* KZPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KZPViewController.m; sourceTree = "<group>"; };
 		C9A50B8B19CEFDD70076D40B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C9A50B9219CEFDD70076D40B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C9AED3AE1A5A4BEA0050733C /* KZPMusicKeyboardTranslator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KZPMusicKeyboardTranslator.h; path = ../Source/KZPMusicKeyboardTranslator.h; sourceTree = "<group>"; };
+		C9AED3AF1A5A4BEA0050733C /* KZPMusicKeyboardTranslator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KZPMusicKeyboardTranslator.m; path = ../Source/KZPMusicKeyboardTranslator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +198,8 @@
 		C9A50BA819CEFE660076D40B /* KZPMusicNotation */ = {
 			isa = PBXGroup;
 			children = (
+				C9AED3AE1A5A4BEA0050733C /* KZPMusicKeyboardTranslator.h */,
+				C9AED3AF1A5A4BEA0050733C /* KZPMusicKeyboardTranslator.m */,
 				C91D9C3D19E38C8900D33363 /* Vexpa */,
 				C91D9C2919DC357900D33363 /* KZPMusicNotationView.h */,
 				C91D9C2A19DC357900D33363 /* KZPMusicNotationView.m */,
@@ -309,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9AED3B01A5A4BEA0050733C /* KZPMusicKeyboardTranslator.m in Sources */,
 				C9A50B8419CEFDD70076D40B /* KZPAppDelegate.m in Sources */,
 				C9A50B8A19CEFDD70076D40B /* KZPViewController.m in Sources */,
 				C9A50B8019CEFDD70076D40B /* main.m in Sources */,
