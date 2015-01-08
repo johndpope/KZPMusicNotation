@@ -1,16 +1,6 @@
-//
-// Testing
-//
-function render() {
-	var vexpaString = document.getElementById('vexpa').value;
-	renderVexpaString(vexpaString);
-}
+var vexpa = {};
 
-
-//
-// Canvas 
-//
-var ELEMENT_WIDTHS =  {
+vexpa.elementWidths =  {
 	"w": 100, 
 	"h": 80, 
 	"q": 60, 
@@ -19,6 +9,37 @@ var ELEMENT_WIDTHS =  {
 	"32": 40
 };
 
+vexpa.durationStrings = {
+	"1": "w", 
+	"2": "h", 
+	"4": "q", 
+	"8": "8", 
+	"16": "16", 
+	"32": "32"
+};
+
+vexpa.durations = {
+	"w": 1,
+	"h": 2,
+	"q": 4,
+	"8": 8,
+	"16": 16,
+	"32": 32
+}
+
+
+//
+// Testing
+//
+vexpa.render = function() {
+	var vexpaString = document.getElementById('vexpa').value;
+	renderVexpaString(vexpaString);
+}
+
+
+//
+// Canvas 
+//
 function clearCanvas () {
 	var canvas = $("#manuscript")[0];
 	var ctx = manuscriptContext();
@@ -289,9 +310,9 @@ function renderGroupString(groupString, activeClef) {
 			isPercussionGroup = isPercussionGroup || staveNote.isUnpitched;
 
 			groupNotes.push(staveNote);
-			groupWidth += ELEMENT_WIDTHS[staveNote.duration];
+			groupWidth += vexpa.elementWidths[staveNote.duration];
 
-			var duration = DURATIONS[staveNote.duration];
+			var duration = vexpa.durations[staveNote.duration];
 			if (duration > minBeatValue	) {
 				minBeatValue = duration;
 			}
@@ -460,23 +481,7 @@ function parseNote(noteString) {
 //
 // Duration
 //
-var DURATION_STRINGS = {
-	"1": "w", 
-	"2": "h", 
-	"4": "q", 
-	"8": "8", 
-	"16": "16", 
-	"32": "32"
-};
 
-var DURATIONS = {
-	"w": 1,
-	"h": 2,
-	"q": 4,
-	"8": 8,
-	"16": 16,
-	"32": 32
-}
 
 function parseDuration(durationString, isRest) {
 
@@ -484,7 +489,7 @@ function parseDuration(durationString, isRest) {
 	var tied = (durationString.indexOf("^") > -1);
 
 	dur = durationString.replace(/\D/g,'');
-	var vexDurationString = DURATION_STRINGS[dur];	
+	var vexDurationString = vexpa.durationStrings[dur];	
 
 	if (dotted) {
 		vexDurationString += "d";

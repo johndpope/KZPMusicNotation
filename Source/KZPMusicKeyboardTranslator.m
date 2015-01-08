@@ -70,7 +70,7 @@
 
 - (void)keyboardWasDismissed
 {
-    
+//    [[KZPMusicKeyboardManager defaultManager] hideControllerWithCompletionBlock:NULL deactivate:YES];
 }
 
 - (void)keyboardDidSendSignal:(NSArray *)noteID
