@@ -127,7 +127,17 @@
 #endif
     else {
         NSArray *sizeValues = [returnValue componentsSeparatedByString:@","];
+        
+        // The HTML5 canvas size has already been changed. The return value from the JS function
+        // gives an opportunity to resize the webview. However, scrolling ability will be lost
+        // if it is resized above the maximum view width for the device.
         CGSize newSize = CGSizeMake([sizeValues[0] intValue], [sizeValues[1] intValue]);
+        if (self.maximumSize.width > 0 && newSize.width > self.maximumSize.width) {
+            newSize.width = self.maximumSize.width;
+        }
+        if (self.maximumSize.height > 0 && newSize.height > self.maximumSize.height) {
+            newSize.height = self.maximumSize.height;
+        }
         if (self.shouldAutomaticallyResize) {
             CGRect frame = self.frame;
             frame.size = newSize;

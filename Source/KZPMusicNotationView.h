@@ -26,6 +26,7 @@
 
 @property (weak, nonatomic) id<KZPMusicNotationViewDelegate> musicNotationDelegate;
 @property (nonatomic) BOOL shouldAutomaticallyResize;
+@property (nonatomic) CGSize maximumSize;
 
 - (void)renderNotationString:(NSString *)notationString;
 
