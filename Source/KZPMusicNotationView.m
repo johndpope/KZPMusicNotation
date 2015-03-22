@@ -138,11 +138,16 @@
         if (self.maximumSize.height > 0 && newSize.height > self.maximumSize.height) {
             newSize.height = self.maximumSize.height;
         }
+        
         if (self.shouldAutomaticallyResize) {
+            
+            // Works in iOS, but has no effecy in OSX. For scenarios where the parent will
+            // attempt to resize the webview, set shouldAutomaticallyResize to false.
             CGRect frame = self.frame;
             frame.size = newSize;
             self.frame = frame;
         }
+        
         [self.musicNotationDelegate notationViewHasNewContentSize:newSize];
     }
 }
