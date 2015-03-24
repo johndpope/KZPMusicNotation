@@ -122,4 +122,9 @@
     [self render];
 }
 
+- (NSString *)getString
+{
+    return [self.vexpaComponents oneLineDescriptionUsingDelimiter:@" "];
+}
+
 @end

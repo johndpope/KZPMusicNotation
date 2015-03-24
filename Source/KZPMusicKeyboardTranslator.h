@@ -13,5 +13,6 @@
 @interface KZPMusicKeyboardTranslator : NSObject <KZPMusicKeyboardDelegate, KZPMusicNotationViewDelegate>
 
 - (instancetype)initWithNotationView:(KZPMusicNotationView *)notationView;
+- (NSString *)getString;
 
 @end
