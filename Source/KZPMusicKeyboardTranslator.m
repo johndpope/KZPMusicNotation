@@ -35,6 +35,7 @@
     return self;
 }
 
+// TODO: does not take scores into account
 - (void)render
 {
     [self.musicNotation renderNotationString:[self.vexpaComponents oneLineDescriptionUsingDelimiter:@" "]];
@@ -124,7 +125,23 @@
 
 - (NSString *)getString
 {
-    return [self.vexpaComponents oneLineDescriptionUsingDelimiter:@" "];
+    // Clean up the string by getting rid of display data like time sig and clef
+    NSMutableArray *parsableComponents = [NSMutableArray array];
+    for (NSString *vexpaComponent in self.vexpaComponents) {
+        
+        // Be a little more sophisticated here...
+        if (![vexpaComponent contains:@"="]) {
+            [parsableComponents addObject:vexpaComponent];
+        }
+    }
+    return [parsableComponents oneLineDescriptionUsingDelimiter:@" "];
+}
+
+// TODO: does not take scores into account
+- (void)applyComponentsFromVexpaString:(NSString *)vexpaString
+{
+    self.vexpaComponents = [NSMutableArray arrayWithArray:[vexpaString componentsSeparatedByString:@" "]];
+    [self render];
 }
 
 @end

@@ -14,5 +14,6 @@
 
 - (instancetype)initWithNotationView:(KZPMusicNotationView *)notationView;
 - (NSString *)getString;
+- (void)applyComponentsFromVexpaString:(NSString *)vexpaString;
 
 @end
