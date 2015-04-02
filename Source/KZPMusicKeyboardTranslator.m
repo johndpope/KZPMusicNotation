@@ -47,6 +47,11 @@
     _musicNotation.musicNotationDelegate = self;
 }
 
+- (void)reset
+{
+    _vexpaComponents = [NSMutableArray array];
+}
+
 
 #pragma mark - KZPMusicNotationDelegate -
 
