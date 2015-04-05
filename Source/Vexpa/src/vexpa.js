@@ -115,6 +115,12 @@ function drawScore(bars, beams, staveNotes) {
 // Vexpa
 //
 function renderVexpaString(vexpaString) {
+    
+    if (!vexpaString || vexpaString.length === 0) {
+        clearCanvas();
+        return;
+    }
+    
 	var staveStrings = vexpaString.split("\\");
 	var ctx = manuscriptContext();
 	var voices = [];

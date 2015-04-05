@@ -8,6 +8,7 @@
 
 #import "KZPMusicKeyboardTranslator.h"
 #import "NSArray+functions.h"
+#import "NSString+functions.h"
 #import "SciNotation.h"
 
 @interface KZPMusicKeyboardTranslator ()
@@ -68,6 +69,9 @@
 
 #pragma mark - KZPMusicKeyboardDelegate -
 
+// TODO: the last component may be a clef or key or time signature, which doesn't gel with
+// the JMSDataObject vexpa parsing, and causes a mysterious extra deletion to be required
+// when clearing a notation view.
 - (void)keyboardDidSendBackspace
 {
     [self.vexpaComponents removeLastObject];
@@ -139,7 +143,7 @@
             [parsableComponents addObject:vexpaComponent];
         }
     }
-    return [parsableComponents oneLineDescriptionUsingDelimiter:@" "];
+    return [parsableComponents count] > 0 ? [parsableComponents oneLineDescriptionUsingDelimiter:@" "] : @"";
 }
 
 // TODO: does not take scores into account
