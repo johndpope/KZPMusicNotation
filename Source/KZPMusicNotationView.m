@@ -174,6 +174,10 @@
 
 - (void)renderNotationString:(NSString *)notationString
 {
+#if !TARGET_IPHONE_SIMULATOR && !TARGET_OS_IPHONE
+    // It appears that iOS handles backslashes slightly differently to OSX when passing strings around
+    notationString = [notationString stringByReplacingOccurrencesOfString:@"\\\\" withString:@"\\"];
+#endif
     [self enqueueCommand:@{@"renderVexpaString": @[notationString]}];
 }
 
