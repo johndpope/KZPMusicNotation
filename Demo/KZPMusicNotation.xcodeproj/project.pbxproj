@@ -28,11 +28,7 @@
 		C9A50B8A19CEFDD70076D40B /* KZPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A50B8919CEFDD70076D40B /* KZPViewController.m */; };
 		C9A50B8C19CEFDD70076D40B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9A50B8B19CEFDD70076D40B /* Images.xcassets */; };
 		C9AED3B01A5A4BEA0050733C /* KZPMusicKeyboardTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AED3AF1A5A4BEA0050733C /* KZPMusicKeyboardTranslator.m */; };
-		C9B7EC591BD533FD00EF8115 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = C9B7EC521BD533FD00EF8115 /* index.html */; settings = {ASSET_TAGS = (); }; };
-		C9B7EC5A1BD533FD00EF8115 /* jquery-2.1.0.min.js in Resources */ = {isa = PBXBuildFile; fileRef = C9B7EC541BD533FD00EF8115 /* jquery-2.1.0.min.js */; settings = {ASSET_TAGS = (); }; };
-		C9B7EC5B1BD533FD00EF8115 /* vexflow-min.js in Resources */ = {isa = PBXBuildFile; fileRef = C9B7EC551BD533FD00EF8115 /* vexflow-min.js */; settings = {ASSET_TAGS = (); }; };
-		C9B7EC5C1BD533FD00EF8115 /* vexpa.js in Resources */ = {isa = PBXBuildFile; fileRef = C9B7EC571BD533FD00EF8115 /* vexpa.js */; settings = {ASSET_TAGS = (); }; };
-		C9B7EC5D1BD533FD00EF8115 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = C9B7EC581BD533FD00EF8115 /* test.html */; settings = {ASSET_TAGS = (); }; };
+		C9B7EC5F1BD53AFC00EF8115 /* MusicNotation.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C9B7EC5E1BD53AFC00EF8115 /* MusicNotation.bundle */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,11 +68,7 @@
 		C9A50B9219CEFDD70076D40B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C9AED3AE1A5A4BEA0050733C /* KZPMusicKeyboardTranslator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KZPMusicKeyboardTranslator.h; path = ../Source/KZPMusicKeyboardTranslator.h; sourceTree = "<group>"; };
 		C9AED3AF1A5A4BEA0050733C /* KZPMusicKeyboardTranslator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KZPMusicKeyboardTranslator.m; path = ../Source/KZPMusicKeyboardTranslator.m; sourceTree = "<group>"; };
-		C9B7EC521BD533FD00EF8115 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
-		C9B7EC541BD533FD00EF8115 /* jquery-2.1.0.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-2.1.0.min.js"; sourceTree = "<group>"; };
-		C9B7EC551BD533FD00EF8115 /* vexflow-min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "vexflow-min.js"; sourceTree = "<group>"; };
-		C9B7EC571BD533FD00EF8115 /* vexpa.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = vexpa.js; sourceTree = "<group>"; };
-		C9B7EC581BD533FD00EF8115 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		C9B7EC5E1BD53AFC00EF8115 /* MusicNotation.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MusicNotation.bundle; path = ../Source/MusicNotation.bundle; sourceTree = "<group>"; };
 		FE67A001F086157C356FEA1C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -221,42 +213,13 @@
 		C9A50BA819CEFE660076D40B /* KZPMusicNotation */ = {
 			isa = PBXGroup;
 			children = (
-				C9B7EC511BD533FD00EF8115 /* Vexpa */,
+				C9B7EC5E1BD53AFC00EF8115 /* MusicNotation.bundle */,
 				C9AED3AE1A5A4BEA0050733C /* KZPMusicKeyboardTranslator.h */,
 				C9AED3AF1A5A4BEA0050733C /* KZPMusicKeyboardTranslator.m */,
 				C91D9C2919DC357900D33363 /* KZPMusicNotationView.h */,
 				C91D9C2A19DC357900D33363 /* KZPMusicNotationView.m */,
 			);
 			name = KZPMusicNotation;
-			sourceTree = "<group>";
-		};
-		C9B7EC511BD533FD00EF8115 /* Vexpa */ = {
-			isa = PBXGroup;
-			children = (
-				C9B7EC521BD533FD00EF8115 /* index.html */,
-				C9B7EC531BD533FD00EF8115 /* lib */,
-				C9B7EC561BD533FD00EF8115 /* src */,
-				C9B7EC581BD533FD00EF8115 /* test.html */,
-			);
-			name = Vexpa;
-			path = ../Source/Vexpa;
-			sourceTree = "<group>";
-		};
-		C9B7EC531BD533FD00EF8115 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				C9B7EC541BD533FD00EF8115 /* jquery-2.1.0.min.js */,
-				C9B7EC551BD533FD00EF8115 /* vexflow-min.js */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
-		C9B7EC561BD533FD00EF8115 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				C9B7EC571BD533FD00EF8115 /* vexpa.js */,
-			);
-			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,13 +308,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9A50B8C19CEFDD70076D40B /* Images.xcassets in Resources */,
-				C9B7EC591BD533FD00EF8115 /* index.html in Resources */,
 				C9A50B7E19CEFDD70076D40B /* InfoPlist.strings in Resources */,
-				C9B7EC5C1BD533FD00EF8115 /* vexpa.js in Resources */,
-				C9B7EC5D1BD533FD00EF8115 /* test.html in Resources */,
-				C9B7EC5A1BD533FD00EF8115 /* jquery-2.1.0.min.js in Resources */,
+				C9B7EC5F1BD53AFC00EF8115 /* MusicNotation.bundle in Resources */,
 				C9A50B8719CEFDD70076D40B /* Main.storyboard in Resources */,
-				C9B7EC5B1BD533FD00EF8115 /* vexflow-min.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
