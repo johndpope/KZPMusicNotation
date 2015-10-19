@@ -63,7 +63,7 @@
 
 - (void)notationViewHasNewContentSize:(CGSize)size
 {
-    NSLog(@"notation view did resize");
+//    NSLog(@"notation view did resize");
 }
 
 
@@ -78,19 +78,11 @@
     [self render];
 }
 
-- (void)keyboardWasDismissed
-{
-//    [[KZPMusicKeyboardManager defaultManager] hideControllerWithCompletionBlock:NULL deactivate:YES];
-}
-
 - (void)keyboardDidSendSignal:(NSArray *)noteID
-                    inputType:(NSArray *)type
                      spelling:(NSArray *)spelling
                      duration:(NSNumber *)duration
                        dotted:(BOOL)dotted
                          tied:(BOOL)tied
-                   midiPacket:(NSArray *)MIDI
-                    oscPacket:(NSArray *)OSC
 {
     NSMutableString *vexpaString = [NSMutableString string];
     if (noteID) {
@@ -129,6 +121,8 @@
     }
     
     [self.vexpaComponents addObject:[NSString stringWithString:vexpaString]];
+    
+    NSLog(@"vexpa components: %@", self.vexpaComponents);
     [self render];
 }
 

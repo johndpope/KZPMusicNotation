@@ -7,14 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "KZPMusicKeyboardManager.h"
 #import "KZPMusicNotationView.h"
 
-@interface KZPMusicKeyboardTranslator : NSObject <KZPMusicKeyboardDelegate, KZPMusicNotationViewDelegate>
+@interface KZPMusicKeyboardTranslator : NSObject <KZPMusicNotationViewDelegate>
 
 - (instancetype)initWithNotationView:(KZPMusicNotationView *)notationView;
 - (NSString *)getString;
 - (void)applyComponentsFromVexpaString:(NSString *)vexpaString;
 - (void)reset;
+
+- (void)keyboardDidSendSignal:(NSArray *)noteID
+                     spelling:(NSArray *)spelling
+                     duration:(NSNumber *)duration
+                       dotted:(BOOL)dotted
+                         tied:(BOOL)tied;
+- (void)keyboardDidSendBackspace;
 
 @end
