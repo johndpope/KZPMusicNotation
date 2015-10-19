@@ -10,4 +10,5 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = "10.9"  
   s.requires_arc = true
   s.framework    = 'Foundation', 'UIKit', 'CoreGraphics'
+  s.resource_bundles = { 'MusicNotation' => ['Source/Vexpa/**/*.js', 'Source/Vexpa/index.html'] }
 end
