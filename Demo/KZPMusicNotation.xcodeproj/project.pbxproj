@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9608DFFF3076C0D7325FB6C0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6475D3A6E749892235EFF0F1 /* libPods.a */; };
 		C91D9C2B19DC357900D33363 /* KZPMusicNotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = C91D9C2A19DC357900D33363 /* KZPMusicNotationView.m */; };
 		C91D9C3E19E38C8900D33363 /* Vexpa in Resources */ = {isa = PBXBuildFile; fileRef = C91D9C3D19E38C8900D33363 /* Vexpa */; };
 		C91D9C4719E396DE00D33363 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C91D9C4619E396DE00D33363 /* Cocoa.framework */; };
@@ -32,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3201D82DBEBAB6DF98349214 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		6475D3A6E749892235EFF0F1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C91D9C2919DC357900D33363 /* KZPMusicNotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KZPMusicNotationView.h; path = ../Source/KZPMusicNotationView.h; sourceTree = "<group>"; };
 		C91D9C2A19DC357900D33363 /* KZPMusicNotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KZPMusicNotationView.m; path = ../Source/KZPMusicNotationView.m; sourceTree = "<group>"; };
 		C91D9C3D19E38C8900D33363 /* Vexpa */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Vexpa; path = ../Source/Vexpa; sourceTree = "<group>"; };
@@ -67,6 +70,7 @@
 		C9A50B9219CEFDD70076D40B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C9AED3AE1A5A4BEA0050733C /* KZPMusicKeyboardTranslator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KZPMusicKeyboardTranslator.h; path = ../Source/KZPMusicKeyboardTranslator.h; sourceTree = "<group>"; };
 		C9AED3AF1A5A4BEA0050733C /* KZPMusicKeyboardTranslator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KZPMusicKeyboardTranslator.m; path = ../Source/KZPMusicKeyboardTranslator.m; sourceTree = "<group>"; };
+		FE67A001F086157C356FEA1C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,12 +90,22 @@
 				C9A50B7619CEFDD70076D40B /* CoreGraphics.framework in Frameworks */,
 				C9A50B7819CEFDD70076D40B /* UIKit.framework in Frameworks */,
 				C9A50B7419CEFDD70076D40B /* Foundation.framework in Frameworks */,
+				9608DFFF3076C0D7325FB6C0 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		252E9210F47A4CB1DAADD369 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3201D82DBEBAB6DF98349214 /* Pods.debug.xcconfig */,
+				FE67A001F086157C356FEA1C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C91D9C4819E396DE00D33363 /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +162,7 @@
 				C9A50B7919CEFDD70076D40B /* KZPMusicNotationDemo */,
 				C9A50B7219CEFDD70076D40B /* Frameworks */,
 				C9A50B7119CEFDD70076D40B /* Products */,
+				252E9210F47A4CB1DAADD369 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,6 +185,7 @@
 				C9A50B9219CEFDD70076D40B /* XCTest.framework */,
 				C91D9C4619E396DE00D33363 /* Cocoa.framework */,
 				C91D9C4819E396DE00D33363 /* Other Frameworks */,
+				6475D3A6E749892235EFF0F1 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -231,9 +247,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9A50BA219CEFDD70076D40B /* Build configuration list for PBXNativeTarget "KZPMusicNotationiOS" */;
 			buildPhases = (
+				F73EAC549108175945E29E8B /* Check Pods Manifest.lock */,
 				C9A50B6C19CEFDD70076D40B /* Sources */,
 				C9A50B6D19CEFDD70076D40B /* Frameworks */,
 				C9A50B6E19CEFDD70076D40B /* Resources */,
+				AB1F73602ED0927650FA3820 /* Embed Pods Frameworks */,
+				06C321FC1EF4324C832CE6C0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -298,6 +317,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06C321FC1EF4324C832CE6C0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB1F73602ED0927650FA3820 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F73EAC549108175945E29E8B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C91D9C4119E396DE00D33363 /* Sources */ = {
@@ -488,6 +555,7 @@
 		};
 		C9A50BA319CEFDD70076D40B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3201D82DBEBAB6DF98349214 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -501,6 +569,7 @@
 		};
 		C9A50BA419CEFDD70076D40B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE67A001F086157C356FEA1C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

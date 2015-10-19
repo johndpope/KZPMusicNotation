@@ -1,4 +1,6 @@
 build/
+Pods/
+Podfile.lock
 *.pbxuser
 !default.pbxuser
 *.mode1v3
