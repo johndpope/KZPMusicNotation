@@ -42,8 +42,10 @@
 - (void)setup
 {
     _loaded = NO;
-    NSString *resourcesPath = [[NSBundle mainBundle] resourcePath];
-    NSString *htmlPath = [resourcesPath stringByAppendingString:@"/Vexpa/index.html"];
+//    NSString *resourcesPath = [[NSBundle mainBundle] resourcePath];
+//    NSString *htmlPath = [resourcesPath stringByAppendingString:@"/Vexpa/index.html"];
+    
+    NSString *htmlPath = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
     
 #if TARGET_IPHONE_SIMULATOR || TARGET_OS_IPHONE
     self.delegate = self;
