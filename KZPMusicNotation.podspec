@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://bitbucket.org/kazoompah/kzpmusicnotation"
   s.author       = { "Matt Rankin" => "kazoompah@gmail.com" }
   s.source       = { :git => "https://bitbucket.org/kazoompah/kzpmusicnotation.git" } 
-  s.dependency   'KZPUtilities', :git => 'https://github.com/kazoompah/KZPUtilities.git'
+  s.dependency   'Reachability'
   s.source_files = 'Source/*.{h,m}', 'Source/MusicNotation.bundle/**/*.js', 'Source/MusicNotation.bundle/index.html'
   s.ios.deployment_target = "7.1"
   s.osx.deployment_target = "10.9"  
