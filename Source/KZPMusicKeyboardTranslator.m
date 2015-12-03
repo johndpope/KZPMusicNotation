@@ -9,7 +9,7 @@
 #import "KZPMusicKeyboardTranslator.h"
 #import "NSArray+functions.h"
 #import "NSString+functions.h"
-#import "SciNotation.h"
+#import "KZPMusicSciNotation.h"
 
 @interface KZPMusicKeyboardTranslator ()
 
@@ -88,7 +88,7 @@
     if (noteID) {
         NSMutableString *vexpaNoteOrChord = [NSMutableString string];
         for (int i = 0; i < [noteID count]; i++) {
-            NSString *vexpaPitch = [SciNotation sciNotationForPitch:[noteID[i] intValue]
+            NSString *vexpaPitch = [KZPMusicSciNotation sciNotationForPitch:[noteID[i] intValue]
                                                            modifier:[spelling[i % [spelling count]] intValue]
                                                             resolve:YES];
             if ([vexpaNoteOrChord length] > 0) {

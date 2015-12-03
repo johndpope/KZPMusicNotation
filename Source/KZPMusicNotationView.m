@@ -142,7 +142,7 @@
         
         if (self.shouldAutomaticallyResize) {
             
-            // Works in iOS, but has no effecy in OSX. For scenarios where the parent will
+            // Works in iOS, but has no efficacy in OSX. For scenarios where the parent will
             // attempt to resize the webview, set shouldAutomaticallyResize to false.
             CGRect frame = self.frame;
             frame.size = newSize;

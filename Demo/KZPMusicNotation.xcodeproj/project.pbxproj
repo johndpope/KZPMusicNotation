@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9608DFFF3076C0D7325FB6C0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6475D3A6E749892235EFF0F1 /* libPods.a */; };
+		A170EF1F1C107AE400BCF722 /* MusicNotation.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C9B7EC5E1BD53AFC00EF8115 /* MusicNotation.bundle */; };
 		C91D9C2B19DC357900D33363 /* KZPMusicNotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = C91D9C2A19DC357900D33363 /* KZPMusicNotationView.m */; };
 		C91D9C4719E396DE00D33363 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C91D9C4619E396DE00D33363 /* Cocoa.framework */; };
 		C91D9C5119E396DE00D33363 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C91D9C4F19E396DE00D33363 /* InfoPlist.strings */; };
@@ -28,7 +29,7 @@
 		C9A50B8A19CEFDD70076D40B /* KZPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A50B8919CEFDD70076D40B /* KZPViewController.m */; };
 		C9A50B8C19CEFDD70076D40B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9A50B8B19CEFDD70076D40B /* Images.xcassets */; };
 		C9AED3B01A5A4BEA0050733C /* KZPMusicKeyboardTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AED3AF1A5A4BEA0050733C /* KZPMusicKeyboardTranslator.m */; };
-		C9B7EC5F1BD53AFC00EF8115 /* MusicNotation.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C9B7EC5E1BD53AFC00EF8115 /* MusicNotation.bundle */; settings = {ASSET_TAGS = (); }; };
+		C9B7EC5F1BD53AFC00EF8115 /* MusicNotation.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C9B7EC5E1BD53AFC00EF8115 /* MusicNotation.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -269,7 +270,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = KZP;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Sudoseng;
 			};
 			buildConfigurationList = C9A50B6B19CEFDD70076D40B /* Build configuration list for PBXProject "KZPMusicNotation" */;
@@ -296,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A170EF1F1C107AE400BCF722 /* MusicNotation.bundle in Resources */,
 				C91D9C5119E396DE00D33363 /* InfoPlist.strings in Resources */,
 				C91D9C5F19E396DE00D33363 /* Images.xcassets in Resources */,
 				C91D9C5719E396DE00D33363 /* Credits.rtf in Resources */,
@@ -452,6 +454,7 @@
 				);
 				INFOPLIST_FILE = "KZPMusicNotationOSX/KZPMusicNotationOSX-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.mrankin.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
@@ -473,6 +476,7 @@
 				GCC_PREFIX_HEADER = "KZPMusicNotationOSX/KZPMusicNotationOSX-Prefix.pch";
 				INFOPLIST_FILE = "KZPMusicNotationOSX/KZPMusicNotationOSX-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.mrankin.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
@@ -497,6 +501,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -560,6 +565,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KZPMusicNotation/KZPMusicNotation-Prefix.pch";
 				INFOPLIST_FILE = "KZPMusicNotation/KZPMusicNotation-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.mrankin.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -574,6 +580,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KZPMusicNotation/KZPMusicNotation-Prefix.pch";
 				INFOPLIST_FILE = "KZPMusicNotation/KZPMusicNotation-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.mrankin.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

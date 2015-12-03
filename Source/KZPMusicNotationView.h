@@ -21,7 +21,7 @@
 #if TARGET_IPHONE_SIMULATOR || TARGET_OS_IPHONE
 @interface KZPMusicNotationView : UIWebView <UIWebViewDelegate>
 #else
-@interface KZPMusicNotationView : WebView
+@interface KZPMusicNotationView : WebView <WebFrameLoadDelegate>
 #endif
 
 @property (weak, nonatomic) id<KZPMusicNotationViewDelegate> musicNotationDelegate;
