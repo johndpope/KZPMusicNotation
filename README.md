@@ -44,6 +44,6 @@ The result looks like this:
 	
 ![alt text](https://github.com/kazoompah/KZPMusicNotation/blob/master/example.png "Example output")	
 	
-The notation string above contains examples of all the possibilities available at present, so you can use this as a reference to get an understanding of what's available. (Note that `\\\\` is the unfortunate escape sequence for a single `\`). The syntax is sufficient for situations requiring pitch and duration representation.
+The notation string above contains examples of all the possibilities available at present. Hopefully this can serve as a reference to get started. (Note that `\\\\` is the unfortunate escape sequence for a single `\`). The syntax is sufficient for situations requiring pitch and duration representation.
 
 
