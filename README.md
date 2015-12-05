@@ -20,7 +20,7 @@ Setup
 
 1. Create a `UIWebView` (iOS) or `WebView` (OSX) in interface builder
 2. Set the web view's custom class to `KZPMusicNotationView`
-3. Wire up the web view to your view controller
+3. Wire up the web view to your view controller (don't forget to `#import "KZPMusicNotationView.h"`)
 
 Optionally, you can also do the following:
 
