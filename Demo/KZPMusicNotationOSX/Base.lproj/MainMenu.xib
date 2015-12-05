@@ -673,16 +673,16 @@
         <window title="KZPMusicNotationOSX" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="640" height="480"/>
+            <rect key="contentRect" x="335" y="390" width="877" height="480"/>
             <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1577"/>
             <value key="minSize" type="size" width="640" height="480"/>
-            <value key="maxSize" type="size" width="640" height="480"/>
+            <value key="maxSize" type="size" width="877" height="480"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="640" height="480"/>
+                <rect key="frame" x="0.0" y="0.0" width="877" height="480"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m2k-y8-zoo">
-                        <rect key="frame" x="20" y="438" width="600" height="22"/>
+                        <rect key="frame" x="20" y="438" width="837" height="22"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" placeholderString="Type a music notation string and hit 'Enter'" drawsBackground="YES" id="96x-Ee-jli">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -693,13 +693,14 @@
                         </connections>
                     </textField>
                     <webView autoresizesSubviews="NO" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NnT-Qz-c4X" customClass="KZPMusicNotationView">
-                        <rect key="frame" x="20" y="20" width="600" height="400"/>
+                        <rect key="frame" x="20" y="20" width="837" height="400"/>
                         <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12">
                             <nil key="identifier"/>
                         </webPreferences>
                     </webView>
                 </subviews>
             </view>
+            <point key="canvasLocation" x="789.5" y="609"/>
         </window>
     </objects>
 </document>
