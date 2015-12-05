@@ -3,7 +3,7 @@
 KZPMusicNotation 
 ============
 
-Add a simple musical notation widget to any iOS or OSX app. This project leverages the [vexflow](http://www.vexflow.com/) library by 0xFE, for drawing music directly onto an HTML5 canvas.
+Add a simple musical notation widget to any iOS or OSX app. This project leverages the [vexflow](http://www.vexflow.com/) library by [0xFE](http://0xfe.blogspot.com.au/), for drawing music directly onto an HTML5 canvas.
 
 Installation
 ------------
