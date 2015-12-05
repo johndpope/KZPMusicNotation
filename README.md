@@ -31,12 +31,12 @@ Optionally, you can also do the following:
 Demo
 ----
 
-The repository contains a project with demo apps for both iOS and OSX, so you can troubleshoot your setup or experiment with various notation strings. (Run `pod install` after cloning to grab the utilities library).
+The repository contains a project with demo apps for both iOS and OSX, so you can troubleshoot your setup or experiment with various notation strings. (Run `pod install` after cloning to grab the utilities library)
 
 Usage Example
 --------------
 
-To render music notation, call `renderNotationString` on the KZPMusicNotationView object, like so:
+To render music notation, call `renderNotationString` on the `KZPMusicNotationView` object, like so:
 
 	[self.musicNotationView renderNotationString:@"Q=treble T=4/4 K=F C4/4 Cx4/8 Eb4/8 ' F4/8 AB4/8 ' Ab4/4 | Eb4/8 D4/8^ ' D4/8 C4/8 ' Ab3/8 Eb3+G3+C4/4. \\\\ Q=bass T=4/4 K=F Eb3+G3/2 C3/2 | F#2/2^ F#2/8 C2/4."];
 	
