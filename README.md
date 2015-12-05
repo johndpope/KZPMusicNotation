@@ -18,7 +18,7 @@ It is not available via the public cocoa pods repo at the moment.
 Setup 
 ------
 
-1. Create a UIWebView (iOS) or WebView (OSX) in interface builder
+1. Create a `UIWebView` (iOS) or `WebView` (OSX) in interface builder
 2. Set the web view's custom class to `KZPMusicNotationView`
 3. Wire up the web view to your view controller
 
