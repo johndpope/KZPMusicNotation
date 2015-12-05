@@ -39,7 +39,11 @@ Usage Example
 To render music notation, call `renderNotationString` on the KZPMusicNotationView object, like so:
 
 	[self.musicNotationView renderNotationString:@"Q=treble T=4/4 K=F C4/4 Cx4/8 Eb4/8 ' F4/8 AB4/8 ' Ab4/4 | Eb4/8 D4/8^ ' D4/8 C4/8 ' Ab3/8 Eb3+G3+C4/4. \\\\ Q=bass T=4/4 K=F Eb3+G3/2 C3/2 | F#2/2^ F#2/8 C2/4."];
-
-The string above contains examples of all the possibilities available at present, so it is worth examining the output of this in order to get an understanding of what's available. (Note that `\\\\` is the unfortunate escape sequence for a single `\`). The syntax is sufficient for situations requiring pitch and duration representation.
+	
+The result looks like this:	
+	
+![alt text](https://github.com/kazoompah/KZPMusicNotation/blob/master/example.png "Example output")	
+	
+The notation string above contains examples of all the possibilities available at present, so it is worth playing around with it in order to get an understanding of what's available. (Note that `\\\\` is the unfortunate escape sequence for a single `\`). The syntax is sufficient for situations requiring pitch and duration representation.
 
 
