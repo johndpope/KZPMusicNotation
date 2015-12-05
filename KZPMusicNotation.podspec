@@ -9,6 +9,5 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "7.1"
   s.osx.deployment_target = "10.7"  
   s.requires_arc = true
-  s.framework    = 'Foundation', 'UIKit', 'CoreGraphics'
   s.resource_bundles = { 'MusicNotation' => ['Source/MusicNotation.bundle/**/*.js', 'Source/MusicNotation.bundle/index.html'] }
 end
