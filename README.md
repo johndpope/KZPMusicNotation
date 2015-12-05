@@ -24,7 +24,7 @@ Setup
 
 Optionally, you can also do the following:
 
-- Assign the controller as delegate to receive `notationViewFailedToProcess` and `notationViewHasNewContentSize` callbacks
+- Assign the controller as delegate to receive `notationViewFailedToProcess` and `notationViewHasNewContentSize:` callbacks
 - Set the music notation view to automatically resize using the `shouldAutomaticallyResize` property. This is useful if the result is being displayed in a popover, for example.
 - Specify the maximum size for the notation view using the `maximumSize` property. This does not restrict the size of the  web view's canvas, which will become scrollable if larger than `maximumSize`.
 
