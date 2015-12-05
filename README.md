@@ -31,7 +31,7 @@ Optionally, you can also do the following:
 Demo
 ----
 
-The repository contains a project with demo apps for both iOS and OSX, so you can troubleshoot your setup or experiment with various notation strings.
+The repository contains a project with demo apps for both iOS and OSX, so you can troubleshoot your setup or experiment with various notation strings. (Make sure you run `pod install` after cloning to grab the utilities library).
 
 Usage Example
 --------------
