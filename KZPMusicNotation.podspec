@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name         = "KZPMusicNotation"
-  s.version      = "0.0.1"
+  s.version      = "0.1.0"
   s.summary      = "A simple music notation view for iOS and OSX"
   s.homepage     = "https://bitbucket.org/kazoompah/kzpmusicnotation"
   s.author       = { "Matt Rankin" => "kazoompah@gmail.com" }
-  s.source       = { :git => "https://bitbucket.org/kazoompah/kzpmusicnotation.git" } 
+  s.source       = { :git => "https://github.com/kazoompah/kzpmusicnotation.git" } 
   s.dependency 'MBProgressHUD', '~> 0.5'
   s.source_files = 'Source/*.{h,m}', 'Source/MusicNotation.bundle/**/*.js', 'Source/MusicNotation.bundle/index.html'
   s.ios.deployment_target = "7.1"
