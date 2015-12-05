@@ -13,7 +13,7 @@ Add the following 2 lines to your Podfile, then run `pod install`:
 	pod 'KZPUtilities', :git => 'https://github.com/kazoompah/KZPUtilities.git'
 	pod 'KZPMusicNotation', :git => 'https://github.com/kazoompah/KZPMusicNotation.git'	
 
-It is not available via the public cocoa pods repo at the moment.
+The project is not available via the public cocoa pods repo at the moment.
 
 Setup 
 ------
