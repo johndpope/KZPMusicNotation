@@ -8,7 +8,7 @@ Add a simple musical notation widget to any iOS or OSX app. This project leverag
 Installation
 ------------
 
-Add the following 2 lines to your Podfile, then run `pod install`:
+The best way to add this to a project is to use Cocoapods. Add the following 2 lines to your Podfile, then run `pod install`:
 
 	pod 'KZPUtilities', :git => 'https://github.com/kazoompah/KZPUtilities.git'
 	pod 'KZPMusicNotation', :git => 'https://github.com/kazoompah/KZPMusicNotation.git'	
