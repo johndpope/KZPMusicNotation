@@ -1,6 +1,8 @@
-build/
-Pods/
+.DS_Store
+.idea/
 Podfile.lock
+Pods/
+build/
 *.pbxuser
 !default.pbxuser
 *.mode1v3
