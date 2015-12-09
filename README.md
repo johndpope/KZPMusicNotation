@@ -33,7 +33,7 @@ Demo
 
 The repository contains a project with demo apps for both iOS and OSX, so you can troubleshoot your setup or experiment with various notation strings. (Run `pod install` after cloning to grab the utilities library)
 
-Usage Example
+Usage Examples
 --------------
 
 To render music notation, call `renderNotationString` on the `KZPMusicNotationView` object, like so:
@@ -47,4 +47,11 @@ The result looks like this:
 	
 The notation string above contains examples of all the possibilities available at present. Hopefully this can serve as a reference to get started. (Note that `\\\\` is the unfortunate escape sequence for a single `\`). The syntax is obviously limited, but sufficient for most situations requiring pitch and duration representation.
 
+If you omit pitch information in the string, the renderer will interpret it as a percussion score:
+
+```objective-c
+[self.canvas renderNotationString:@"8. 16 ' 8 16 16 ' 16 16 8 ' 16 8."];
+```
+
+![alt text](https://github.com/kazoompah/KZPMusicNotation/blob/master/example2.png "Percussion example")
 
