@@ -50,7 +50,7 @@ The notation string above contains examples of all the possibilities available a
 If you omit pitch information from the string, the renderer will interpret it as a percussion score:
 
 ```objective-c
-[self.canvas renderNotationString:@"8. 16 ' 8 16 16 ' 16 16 8 ' 16 8."];
+[self.musicNotationView renderNotationString:@"8. 16 ' 8 16 16 ' 16 16 8 ' 16 8."];
 ```
 
 ![alt text](https://github.com/kazoompah/KZPMusicNotation/blob/master/example2.png "Percussion example")
