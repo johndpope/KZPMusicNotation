@@ -47,7 +47,7 @@ The result looks like this:
 	
 The notation string above contains examples of all the possibilities available at present. Hopefully this can serve as a reference to get started. (Note that `\\\\` is the unfortunate escape sequence for a single `\`). The syntax is obviously limited, but sufficient for most situations requiring only pitch and duration representation.
 
-If you omit pitch information in the string, the renderer will interpret it as a percussion score:
+If you omit pitch information from the string, the renderer will interpret it as a percussion score:
 
 ```objective-c
 [self.canvas renderNotationString:@"8. 16 ' 8 16 16 ' 16 16 8 ' 16 8."];
